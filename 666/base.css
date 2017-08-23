@@ -1,0 +1,186 @@
+/* editor css reset */
+html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, menu, nav, section, time, mark, audio, video, details, summary {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	font-weight: normal;
+	vertical-align: baseline;
+	background: transparent;
+	font-family: "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", "WenQuanYi Micro Hei", "Microsoft Yahei", sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+main, article, aside, figure, footer, header, nav, section, details, summary {display: block;}
+html {box-sizing: border-box;}
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+img,
+object,
+embed {max-width: 100%;}
+html {overflow-y: scroll;}
+ul {list-style: none;}
+blockquote, q {quotes: none;}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {content: ''; content: none;}
+a {margin: 0; padding: 0; font-size: 100%; vertical-align: baseline; background: transparent;}
+del {text-decoration: line-through;}
+abbr[title], dfn[title] {border-bottom: 1px dotted #000; cursor: help;}
+table {border-collapse: separate; border-spacing: 0;}
+th {font-weight: bold; vertical-align: bottom;}
+td {font-weight: normal; vertical-align: top;}
+hr {display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0;}
+input, select {vertical-align: middle;}
+input, select, button{outline: 0;}
+pre {
+    white-space: pre; /* CSS2 */
+    white-space: pre-wrap; /* CSS 2.1 */
+    white-space: pre-line; /* CSS 3 (and 2.1 as well, actually) */
+    word-wrap: break-word; /* IE */
+}
+input[type="radio"] {vertical-align: text-bottom;}
+input[type="checkbox"] {vertical-align: bottom;}
+.ie7 input[type="checkbox"] {vertical-align: baseline;}
+.ie6 input {vertical-align: text-bottom;}
+select, input, textarea {font: 99% sans-serif;}
+table {font-size: inherit; font: 100%;}
+small {font-size: 85%;}
+b,strong {font-weight: bold;}
+td, td img {vertical-align: top;}
+sub, sup {font-size: 75%; line-height: 0; position: relative;}
+sup {top: -0.5em;}
+sub {bottom: -0.25em;}
+pre, code, kbd, samp {font-family: monospace, sans-serif;}
+.clickable,
+label,
+input[type=button],
+input[type=submit],
+input[type=file],
+button {cursor: pointer;}
+button, input, select, textarea {margin: 0;}
+button,
+input[type=button] {width: auto; overflow: visible;}
+.ie7 img {-ms-interpolation-mode: bicubic;}
+.clearfix:after { content: " "; display: block; clear: both; }
+
+/* 简历编辑工具基础样式 */
+.yt-baseStyle div[contenteditable]{border: 1px solid transparent;}
+.yt-baseStyle div[contenteditable]:hover{border: 1px dashed #60d5ba !important;}
+.yt-baseStyle div[contenteditable]:focus{border: 1px dashed #60d5ba;outline: 1px solid #60d5ba;-moz-box-shadow: 0 0 4px #60d5ba;-webkit-box-shadow:inset 0 0 4px #60d5ba;box-shadow: 0 0 4px #60d5ba;}
+.yt-baseStyle .baseBlock { position: relative; cursor: move; z-index: 1;}
+.yt-baseStyle .selectedBlock{background-color: #fff; position: relative;z-index: 1000 !important;cursor:initial !important;border:1px solid #60d5ba;}
+.yt-baseStyle .selectedBlock:hover{border:1px solid #60d5ba;}
+.yt-baseStyle .baseBlock .showItem {display: inline-block;position: relative;border:1px solid transparent;}
+.yt-baseStyle .baseBlock .showItem:hover {border: 1px dashed #60d5ba;}
+.yt-baseStyle .baseBlock .showItem .iconfont.delItem { position: absolute; right: -14px; top: 50%; margin-top: -7px; display:none; }
+.yt-baseStyle .baseBlock .showItem:hover .iconfont.delItem { display:block; color:red;}
+
+/* 富文本编辑 Toolbar */
+.yt-fontBar{display: none;}
+.yt-fontBar .inner{width: 676px;height: 40px;line-height: 40px;border-radius: 40px;background: #00c091;position: absolute;z-index:999;top: -50px;left: 0px;box-shadow:0px 0px 10px 0px rgba(0,0,0,0.2);/* min-width: 260px; */}
+.yt-fontBar .btn-group{float: left;height: 40px;padding: 0 10px;border-right: 1px solid #f1f1f1;background: #fff;}
+.yt-fontBar .btn-group:first-child{border-bottom-left-radius: 40px;border-top-left-radius: 40px;}
+.yt-fontBar .btn-group:last-child{border-top-right-radius: 40px;border-bottom-right-radius: 40px;}
+.yt-fontBar .btn-group a{display: inline-block;}
+.yt-fontBar .btn-group .abtn{width: 18px;height: 26px;margin-top: 7px;background:url(http://oq32cb9j3.bkt.clouddn.com/edit_font.png) no-repeat 0px 0px ;text-indent: -999em;}
+.yt-fontBar .btn-group .abtn:hover{background-color: #99e6d3;}
+.yt-fontBar .btn-group .abtn.fontsize{background-position: 3px 7px;width: 56px;margin-left: 10px;position: relative;}
+.yt-fontBar .btn-group .abtn.fontsize select{position: absolute;top: 33px;left: -20px;padding: 5px 0;padding-top:0px;width: 87px;height:auto;border: none;display: none;}
+.yt-fontBar .btn-group .abtn.fontsize select option{color: rgba(0,0,0,.6);padding: 5px 10px;cursor: pointer;background: #f6f6f6;}
+.yt-fontBar .btn-group .abtn.fontsize select option:hover{background: #00c091;color: #fff;}
+.yt-fontBar .btn-group .abtn.fontname{background-position: 3px -100px;width: 56px;margin-left: 10px;position: relative;}
+.yt-fontBar .btn-group .abtn.fontname select{position: absolute;top: 33px;left: -20px;padding: 5px 0;background: #f6f6f6;padding-top: 0px;width: 87px;height:auto;border: none;display: none;}
+.yt-fontBar .btn-group .abtn.fontname select option{color: rgba(0,0,0,.6);padding: 5px 10px;cursor: pointer;background: #f6f6f6;}
+.yt-fontBar .btn-group .abtn.fontname select option:hover{background: #00c091;color: #fff;}
+.yt-fontBar .btn-group .abtn.lineheight{background-position: 3px 7px;width: 56px;margin-left: 10px;position: relative;}
+.yt-fontBar .btn-group .abtn.lineheight select{position: absolute;top: 33px;left: -20px;padding: 5px 0;padding-top: 0px;width: 87px;height:auto;border: none;display: none;}
+.yt-fontBar .btn-group .abtn.lineheight select option{color: rgba(0,0,0,.6);padding: 5px 10px;cursor: pointer;background: #f6f6f6;}
+.yt-fontBar .btn-group .abtn.lineheight select option:hover{background: #00c091;color: #fff;}
+
+.yt-fontBar .btn-group .abtn.fontcolor{background-position: -105px 8px;width: 36px;position: relative;}
+.yt-fontBar .btn-group .abtn.fontcolor span{width: 12px;height: 2px;display: block;position: absolute;top: 19px;left: 6px;background-color: #000;}
+
+/*.yt-fontBar .btn-group .abtn.fontcolor:hover .fontColorS{display: block;}*/
+.yt-fontBar .btn-group .fontColorS{position: absolute;top: 20px;left: -12px;display: none;padding-top: 13px;}
+.yt-fontBar .btn-group .fontColorS div{padding: 0 0 0 20px;width: 224px;height: 220px;border: 1px solid #00c091;background: #f6f6f6;}
+.yt-fontBar .btn-group .fontColorS ul{height: 120px;}
+.yt-fontBar .btn-group .fontColorS ul li{width: 22px;height: 22px;float: left;margin: 18px 10px 0 0;background: #d0d8ef;}
+.yt-fontBar .btn-group .fontColorS ul li:hover,.yt-fontBar .btn-group .fontColorS ul li.selected{box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.44);}
+.yt-fontBar .btn-group .fontColorS ul li:nth-child(1){background-color: #ffffff;}
+.yt-fontBar .btn-group .fontColorS ul li:nth-child(2){background-color: #000000;}
+.yt-fontBar .btn-group .fontColorS ul li:nth-child(3){background-color: #fe2c23;}
+.yt-fontBar .btn-group .fontColorS ul li:nth-child(4){background-color: #4da8ee;}
+.yt-fontBar .btn-group .fontColorS ul li:nth-child(5){background-color: #ff0000;}
+.yt-fontBar .btn-group .fontColorS ul li:nth-child(6){background-color: #aa17d0;}
+.yt-fontBar .btn-group .fontColorS ul li:nth-child(7){background-color: #d9d9d9;}
+.yt-fontBar .btn-group .fontColorS ul li:nth-child(8){background-color: #254665;}
+.yt-fontBar .btn-group .fontColorS ul li:nth-child(9){background-color: #ffd900;}
+.yt-fontBar .btn-group .fontColorS ul li:nth-child(10){background-color: #0066ff;}
+.yt-fontBar .btn-group .fontColorS ul li:nth-child(11){background-color: #f54f4f;}
+.yt-fontBar .btn-group .fontColorS ul li:nth-child(12){background-color: #9389b1;}
+.yt-fontBar .btn-group .fontColorS ul li:nth-child(13){background-color: #bfbfbf;}
+.yt-fontBar .btn-group .fontColorS ul li:nth-child(14){background-color: #ffa200;}
+.yt-fontBar .btn-group .fontColorS ul li:nth-child(15){background-color: #a3e043;}
+.yt-fontBar .btn-group .fontColorS ul li:nth-child(16){background-color: #89b0ce;}
+.yt-fontBar .btn-group .fontColorS ul li:nth-child(17){background-color: #663300;}
+.yt-fontBar .btn-group .fontColorS ul li:nth-child(18){background-color: #ff5a00;}
+.yt-fontBar .btn-group .fontColorS ul li:nth-child(19){background-color: #a6a6a6;}
+.yt-fontBar .btn-group .fontColorS ul li:nth-child(20){background-color: #3ebf62;}
+.yt-fontBar .btn-group .fontColorS ul li:nth-child(21){background-color: #bf9000;}
+.yt-fontBar .btn-group .fontColorS ul li:nth-child(22){background-color: #8d634a;}
+.yt-fontBar .btn-group .fontColorS ul li:nth-child(23){background-color: #0099ff;}
+.yt-fontBar .btn-group .fontColorS ul li:nth-child(24){background-color: #01cea5;}
+.yt-fontBar .btn-group .fontColorS ul li:nth-child(25){background-color: #7f7f7f;}
+.yt-fontBar .btn-group .fontColorS ul li:nth-child(26){background-color: #5b9bd5;}
+.yt-fontBar .btn-group .fontColorS ul li:nth-child(27){background-color: #009900;}
+.yt-fontBar .btn-group .fontColorS ul li:nth-child(28){background-color: #01a3b0;}
+.yt-fontBar .btn-group .fontColorS ul li:nth-child(29){background-color: #194e77;}
+.yt-fontBar .btn-group .fontColorS ul li:nth-child(30){background-color: #530e6f;}
+
+.yt-fontBar .btn-group .fontColorS .cbtn{width: 60px;height: 26px;line-height: 25px;display: block;text-decoration: initial;font-size: 12px;border: 1px solid #dcdcdc;color: #fff;background: #000;border-radius: 3px;margin: 17px 62px 0px;text-indent: 0px;text-align: center;}
+.yt-fontBar .btn-group .abtn.bold{background-position: -145px 9px;width: 25px;}
+.yt-fontBar .btn-group .abtn.italic{background-position: -177px 9px;width: 25px;}
+.yt-fontBar .btn-group .abtn.underline{background-position: -209px 9px;width: 25px;}
+.yt-fontBar .btn-group .abtn.justifyleft{background-position: -256px 8px;width: 25px;}
+.yt-fontBar .btn-group .abtn.justifycenter{background-position: -296px 8px;width: 25px;}
+.yt-fontBar .btn-group .abtn.justifyright{background-position: -336px 8px;width: 25px;}
+.yt-fontBar .btn-group .abtn.insertunorderedlist{background-position: -389px 7px;width: 30px;}
+.yt-fontBar .btn-group .abtn.insertorderedlist{background-position: -451px 7px;width: 30px;}
+.yt-fontBar .btn-group .abtn.indent{background-position: -502px 7px;width: 25px;}
+.yt-fontBar .btn-group .abtn.outdent{background-position: -550px 7px;width: 25px;}
+.yt-fontBar .btn-group .abtn.lineheight{background-position: -52px 8px;width: 50px;}
+.yt-fontBar .btn-group .abtn.link{background-position: -589px 5px;width: 25px;}
+.yt-fontBar .btn-group .addLink{position: absolute;background: #fff;width: 356px;right: 0px;top: 40px;padding: 0 10px;display: none;}
+.yt-fontBar .btn-group .addLink input{border: 1px solid rgba(199, 199, 199, 0.23);width: 184px;height: 30px;padding: 0 3px;margin-right: 5px;}
+.yt-fontBar .btn-group .addLink input:focus{border: 1px solid #00C091;}
+.yt-fontBar .btn-group .addLink button{background:#00c091;color: #fff;border-radius: 4px;height:28px;line-height: 28px;padding:0 24px;border: none;}
+.yt-fontBar .btn-group .addLink button:hover{background: #08d1a0;}
+.yt-fontBar .btn-group .addLink button:active{background: #0ea882;}
+
+.yt-fontBar .add{float: left;width: 40px;height: 40px;background: #02b186 url(http://oq32cb9j3.bkt.clouddn.com/edit_font.png) no-repeat 12px -30px;cursor: pointer;}
+.yt-fontBar .delete{float: left;width: 56px;height: 40px;cursor: pointer;border-top-right-radius: 40px;border-bottom-right-radius: 40px;background: #00c091 url(http://oq32cb9j3.bkt.clouddn.com/edit_font.png) no-repeat -30px -31px;}
+.yt-fontBar .add:hover{background-color: #05c798;}
+.yt-fontBar .add:active{background-color: #03af85;}
+.yt-fontBar .delete:hover{background-color: #da5358;}
+.yt-fontBar .delete:active{background-color: #b93f44;}
+
+.resumePageBreak {position:absolute;width:1100px;height: 44px;line-height:44px;background: rgba(121, 188, 43, .7);left:50%;margin-left:-550px;overflow: hidden;z-index: 10;text-align:center;color:#fff}
+.lightbg {position:fixed;left:0;top:0;width:100%;height:100%;background-color:transparent;z-index:1001;display:none;}
+.resumebg{ position: fixed;top: 0; right: 0;bottom: 0;left: 0;background: rgba(0,0,0,.3);z-index: 999 !important;display: none;}
+.sortable-placeholder{width: 100%;border: 3px dashed #13AD67; background: rgba(0,192,142,.1);padding: 25px 0;overflow: hidden;}
+.sortable-placeholder:before{content: "拖拽到这里";text-align: center;font-size: 24px;display: block;color: #00c091;}
+.ui-selectable-helper{cursor: move;}
+
+.yt-addBtn{width: 100%;border: 2px dashed #00c091;overflow: hidden;text-align: center;background: #fff;padding: 5px 0;position: relative;z-index: 10;}
+.yt-addBtn a{color: #00c091;font-size: 18px;}
+.yt-addBtn a i{padding-right: 5px;}
+.yt-addBtn:hover{border-color: #23e8b8;}
+.yt-addBtn:hover a{color: #23e8b8;}
+
+.demo {display: none;}

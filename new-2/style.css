@@ -1,0 +1,89 @@
+.demo,.newDemo {display: none;}
+div[contenteditable] {cursor: text;display: inline-block;vertical-align: top;}
+.yt-baseStyle .baseBlock .showItem {display: block;}
+/*.yt-baseStyle .newBlock .showItem {display: inline-block;}*/
+.yt-baseStyle .newBlock .showItem:hover {padding: 5px; cursor: move;}
+/* theme default */
+.default .container{
+  position: relative;
+  padding: 20px 25px 25px 57px;
+  font-size: 14px;
+}
+.default .container h1 {
+  font-weight: bolder;
+  font-size: 18px;
+  color: #8BC3DE;
+}
+.container #base h1{
+  color: #333;
+}
+.container .left{
+  width: 37px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background: #8BC3DE; 
+}
+.main .avatar{
+  height: 191px;
+  width: 145px;
+  display: inline-block;
+  background: #E6E4E4;
+  float: left;
+  margin-right: 20px; 
+}
+.main .avatar img{
+  height: 191px;
+  width: 145px;
+}
+
+.main #base .header-box .name{
+  float: left;
+  margin-right: 40px;
+  font-size: 20px;
+}
+.main #base .header-box .position{
+  float: left;
+}
+.main #base .header-box .height {
+  height: 22px;
+  width: 10px;
+  display: inline-block;
+}
+.main #base .header-box{
+  margin-left: 165px;
+  padding: 40px 0 8px;
+  border-bottom: 1px solid #979797;
+}
+.main #base .item {
+  float: left;
+  margin-right: 30px;
+}
+.container .main .title{
+  margin: 16px 0 6px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #979797;
+}
+.main #jybj .item-box .item,.main #sxjl .item-box .item,.main #xmjy .item-box .item{
+  float: left;
+  margin-right: 30px;
+  text-align: left;
+  font-size: 16px;
+  color: #333333;
+  line-height: 22px;
+}
+.main #jxry .jx{
+  float: left;
+  margin-right: 50px;
+}
+.main #xqah .hobbyItem{
+  float: left;
+  width: 48px;
+  height: 48px;
+  border: 1px solid #999999;
+  border-radius: 24px;
+  margin: 14px 14px 0 0;
+  text-align: center;
+  line-height: 48px;
+}

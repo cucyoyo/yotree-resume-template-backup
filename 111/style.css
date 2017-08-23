@@ -1,0 +1,128 @@
+.demo,.newDemo {display: none;}
+div[contenteditable] {cursor: text;display: inline-block;vertical-align: top;}
+.yt-baseStyle .baseBlock .showItem {display: block;}
+/* theme default */
+.default .container{
+  position: relative;
+  font-size: 14px;
+  color: #666;
+  padding: 30px 30px 30px 20px;
+  font-size: 14px;
+}
+.block-top {
+  float: left;
+}
+.block-top .big {
+  width: 46px;
+  height: 191px;
+  background: #59789B;
+  margin-bottom: 10px;
+}
+.block-top .small {
+  width: 46px;
+  height: 15px;
+  background: #F8E71C;
+}
+
+.title1{
+  font-size: 18px;
+  color: #333;
+  font-weight: bolder;
+}
+.main section{
+  margin-top: 30px;
+}
+.avatar {
+  float: left;
+  margin: 0 20px 0 10px;
+  width: 145px;
+  height: 191px;
+  background: #D8D8D8;
+}
+.avatar img{
+  width: 145px;
+  height: 191px;
+}
+#base {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #979797;
+}
+#base .name{
+  margin-left: 220px;
+  padding: 44px 0 10px 0;
+  border-bottom: 1px solid #979797;
+}
+#base .item {
+  float: left;
+  margin-right: 30px;
+  line-height: 30px;
+}
+
+.block {
+  height: 24px;
+  background: #59789B;
+  position: absolute;
+}
+.block1,.block4 {
+  width: 4px;
+}
+.block1{
+  margin-left: -150px;
+}
+
+.block2 {
+  margin-left: -141px;
+  width: 12px;
+}
+.block3 {
+  margin-left: -31px;
+  width: 12px;
+}
+.block4{
+  margin-left: -14px;
+}
+.main section .title-name{
+  position: absolute;
+  margin-left: -119px;
+}
+
+.main section {
+  position: relative;
+  margin-left: 150px;
+  padding-bottom: 7px; 
+  border-bottom:  1px solid #979797;
+}
+.main #jybj .item-box .item,.main #sxjl .item-box .item,.main #xmjy .item-box .item{
+  float: left;
+  margin-right: 30px;
+  text-align: left;
+  font-size: 14px;
+  font-weight: bolder;
+  line-height: 25px;
+}
+.main #xqah .hobbyItem {
+  float: left;
+  width: 50px;
+  height: 50px;
+  border: 1px solid #999999;
+  margin: 20px 40px 10px 10px;
+  text-align: center;
+  line-height: 70px;
+  font-size: 10px;
+  transform: rotate(45deg);
+  -ms-transform: rotate(45deg); /* IE 9 */
+  -webkit-transform: rotate(45deg); /* Safari and Chrome */
+}
+.main #xqah .hobbyItem div{
+  margin-top: -10px;
+  margin-left: 5px;
+  transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg); /* IE 9 */
+  -webkit-transform: rotate(-45deg); /* Safari and Chrome */
+
+}
+.main #xqah .delItem {
+    transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg); /* IE 9 */
+    -webkit-transform: rotate(-45deg); /* Safari and Chrome */
+}

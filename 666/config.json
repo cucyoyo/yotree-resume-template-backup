@@ -1,0 +1,41 @@
+{
+    "blocks": [
+        {
+            "label": "教育背景",
+            "forid": "jybj",
+            "checked": true
+        },
+        {
+            "label": "实习经历",
+            "forid": "sxjl",
+            "checked": true
+        },
+        {
+            "label": "项目经验",
+            "forid": "xmjy",
+            "checked": true
+        },
+        {
+            "label": "自我评价",
+            "forid": "zwpj",
+            "checked": true
+        },
+        {
+            "label": "奖项荣誉",
+            "forid": "jxry",
+            "checked": true
+        },
+        {
+            "label": "兴趣爱好",
+            "forid": "xqah",
+            "checked": true
+        }
+
+    ],
+    "colors": [
+        {
+            "label": "default",
+            "value": "#93DB3A"
+        }
+    ]
+}

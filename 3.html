@@ -1,0 +1,713 @@
+
+css
+https://s3.cn-north-1.amazonaws.com.cn/rs-template/templates/92/592fda575b7c8176c1784238_css.css?r=1496745750
+
+<div id="themeStyle" class="default">
+      <div class="container clearfix">
+        <div class="avatar">
+          <input id="file" type="file">
+          <% if(typeof(information)=="undefined"){ %>
+            <img id="avatar" src="https://resume.yo-tree.com/static/img/no-user.png" alt="">
+          <% }else if(typeof(information.avatar)=="undefined"){ %>
+            <img id="avatar" src="https://resume.yo-tree.com/static/img/no-user.png" alt="">
+          <% }else{ %>
+            <img id="avatar" src="<%=information.avatar%>" alt="">
+          <% } %>
+        </div>
+        <div class="base baseBlock">
+          <h1 class="name">
+          <div contenteditable="true">
+            <% if(typeof(information)=="undefined"){ %>
+              姓名：有树
+            <% }else if(typeof(information.name)=="undefined"){ %>
+              姓名：有树
+            <% }else{ %>
+              姓名：<%=information.name%>
+            <% } %>
+          </div>
+          </h1>
+          <div class="position">
+            <div contenteditable="true">
+              <% if(typeof(jobIntension)=="undefined"){ %>
+                求职意向：审计员
+              <% }else if(typeof(jobIntension[0].position)=="undefined"){ %>
+                求职意向：审计员
+              <% }else{ %>
+                求职意向：<%=jobIntension[0].position%>
+              <% } %>
+            </div>
+          </div>
+        </div>
+        <div class="line"></div>
+        <div id="self" class="self baseBlock">
+          <div for-type="old" for-id="self" class="yt-fontBar"></div>
+          <div contenteditable="true">
+            我为人友善、真诚、做事细致、专注，有很强的责任心，学习能力与适应能力强，喜欢与他人交谈，热爱生活，性格标签是认真，有着沉静内敛，善于思考和研究的特质，作为本硕皆为新闻学专业的文科生，与文字为伴多年，文字功底扎实，文字编辑、把关、策划能力强。
+          </div>
+        </div>
+        <div class="line"></div>
+        <div class="main clearfix">
+          <div class="left">
+            <div id="base" class="baseinfo baseBlock">
+              <div for-type="old" for-id="base" class="yt-fontBar"></div>
+              <h1 class="title">
+                <div contenteditable="true">
+                  基本信息
+                </div>
+                <span class="circle"></span>
+              </h1>
+              <div class="item showItem">
+                <div contenteditable="true">
+                  <% if(typeof(information)=="undefined"){ %>
+                    女 <span>性别</span>
+                  <% }else if(typeof(information.gender)=="undefined"){ %>
+                    女 <span>性别</span>
+                  <% }else{ %>
+                    <%=information.gender%> <span>性别</span>
+                  <% } %>
+                </div>
+              </div>
+              <div class="item showItem">
+                <div contenteditable="true">
+                  <% if(typeof(information)=="undefined"){ %>
+                    北京 <span>现居</span>
+                  <% }else if(typeof(information.addressStr)=="undefined"){ %>
+                    北京 <span>现居</span>
+                  <% }else{ %>
+                    <%=information.addressStr%>  <span>现居</span>
+                  <% } %>
+                </div>
+              </div>
+              <div class="item showItem">
+                <div contenteditable="true">
+                  <% if(typeof(information)=="undefined"){ %>
+                    1992.09 <span>生日</span>
+                  <% }else if(typeof(information.birthdayStr)=="undefined"){ %>
+                    1992.09 <span>生日</span>
+                  <% }else{ %>
+                    <%=information.birthdayStr%> <span>生日</span>
+                  <% } %>
+                </div>
+              </div>
+              <div class="item showItem">
+                <div contenteditable="true">
+                  <% if(typeof(information)=="undefined"){ %>
+                    18888888888 <span>电话</span>
+                  <% }else if(typeof(information.phone)=="undefined"){ %>
+                    18888888888 <span>电话</span>
+                  <% }else{ %>
+                    <%=information.phone%> <span>电话</span>
+                  <% } %>
+                </div>
+              </div>
+              <div class="item showItem">
+                <div contenteditable="true">
+                  <% if(typeof(information)=="undefined"){ %>
+                    12345@yo-tree.com <span>邮箱</span>
+                  <% }else if(typeof(information.email)=="undefined"){ %>
+                    12345@yo-tree.com <span>邮箱</span>
+                  <% }else{ %>
+                    <%=information.email%> <span>邮箱</span>
+                  <% } %>
+                </div>
+              </div>
+              <div class="item showItem">
+                <div contenteditable="true">
+                  <% if(typeof(information)=="undefined"){ %>
+                    党员 <span>政治面貌</span>
+                  <% }else if(typeof(information.politics)=="undefined"){ %>
+                    党员 <span>政治面貌</span>
+                  <% }else{ %>
+                    <%=information.politics%> <span>政治面貌</span>
+                  <% } %>
+                </div>
+              </div>
+              <div class="demo">
+                <div class="item showItem">
+                  <div contenteditable="true">
+                    编辑内容 <span>标题</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="ryjx" class="honor baseSort baseBlock">
+              <div for-type="old" for-id="ryjx" class="yt-fontBar"></div>
+              <h1 class="title">
+                <div contenteditable="true">
+                  荣誉奖项
+                </div>
+                <span class="circle"></span>
+              </h1>
+              <div class="desc">
+                <div contenteditable="true">
+                  <% if(typeof(certificate)=="undefined"){ %>
+                    获得校一等奖奖学金<br> 全国计算机等级三级证书
+                    <br> 全国英语六级
+                    <br> 获得全国会计资格资质
+                    <br> 获得校一等奖奖学金
+                    <%}else if(certificate.length > 0) { %>
+                      <%for(var i=0;i<certificate.length;i++){%>
+                        <%=certificate[i].name%><br>
+                      <%}%>
+                    <%}else{%>
+                      获得校一等奖奖学金<br> 全国计算机等级三级证书
+                      <br> 全国英语六级
+                      <br> 获得全国会计资格资质
+                      <br> 获得校一等奖奖学金
+                    <%}%>
+                </div>
+              </div>
+              <div class="demo">
+                <div class="desc showItem">
+                  <div contenteditable="true">
+                    获得校一等奖奖学金<br> 全国计算机等级三级证书
+                    <br> 全国英语六级
+                    <br> 获得全国会计资格资质
+                    <br> 获得校一等奖奖学金
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="right">
+            <div id="jybj" class="education baseBlock clearfix">
+              <div for-type="old" for-id="jybj" class="yt-fontBar"></div>
+              <h1 class="title">
+                <span class="circle"></span>
+                <div contenteditable="true">
+                  教育背景
+                </div>
+              </h1>
+              <% if(typeof(education)=="undefined"){ %>
+                <div class="item-box clearfix">
+                  <div class="time showItem">
+                    <div contenteditable="true">2014.09-2016.06</div>
+                  </div>
+                  <div class="item showItem">
+                    <div contenteditable="true">清华大学</div>
+                  </div>
+                  <div class="item showItem">
+                    <div contenteditable="true">新闻传播学</div>
+                  </div>
+                  <div class="item showItem">
+                    <div contenteditable="true">硕士研究生</div>
+                  </div>
+                </div>
+                <div class="desc showItem">
+                  <div contenteditable="true">
+                  2016年获得研究生第一学d年特等奖学金<br>
+                  2016年11月代表北京大学新闻系参加首页北京地区新闻院系研究生论坛<br>
+                  2016年12月获评研究生毕业论文开题答辩优秀报告人<br>
+                  2016年发表北大中文核心期刊2篇
+                  </div>
+                </div>
+              <% }else if(education.length > 0){ %>
+                <%for(var i=0;i<education.length;i++){%>
+                    <div class="item-box clearfix">
+                      <div class="time showItem">
+                        <div contenteditable="true">
+                          <% if(typeof(education[i].time)=="undefined"){ %>
+                            2014.09-2016.06
+                          <% }else{ %>
+                            <%=education[i].time%>
+                          <% } %>
+                        </div>
+                      </div>
+                      <div class="item showItem">
+                        <div contenteditable="true">
+                          <% if(typeof(education[i].gxname)=="undefined"){ %>
+                            有树大学
+                          <% }else{ %>
+                            <%=education[i].gxname%>
+                          <% } %>
+                        </div>
+                      </div>
+                      <div class="item showItem">
+                        <div contenteditable="true">
+                          <% if(typeof(education[i].major)=="undefined"){ %>
+                            新闻传播学
+                          <% }else{ %>
+                            <%=education[i].major%>
+                          <% } %>
+                        </div>
+                      </div>
+                      <div class="item showItem">
+                        <div contenteditable="true">
+                          <% if(typeof(education[i].education)=="undefined"){ %>
+                            研究生
+                          <% }else{ %>
+                            <%=education[i].education%>
+                          <% } %>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="desc showItem">
+                      <div contenteditable="true">
+                      2016年获得研究生第一学d年特等奖学金<br>
+                      2016年11月代表北京大学新闻系参加首页北京地区新闻院系研究生论坛<br>
+                      2016年12月获评研究生毕业论文开题答辩优秀报告人<br>
+                      2016年发表北大中文核心期刊2篇
+                      </div>
+                    </div>
+                <%}%>
+              <% }else{ %>
+                <div class="item-box clearfix">
+                  <div class="time showItem">
+                    <div contenteditable="true">2014.09-2016.06</div>
+                  </div>
+                  <div class="item showItem">
+                    <div contenteditable="true">清华大学</div>
+                  </div>
+                  <div class="item showItem">
+                    <div contenteditable="true">新闻传播学</div>
+                  </div>
+                  <div class="item showItem">
+                    <div contenteditable="true">硕士研究生</div>
+                  </div>
+                </div>
+                <div class="desc showItem">
+                  <div contenteditable="true">
+                  2016年获得研究生第一学d年特等奖学金<br>
+                  2016年11月代表北京大学新闻系参加首页北京地区新闻院系研究生论坛<br>
+                  2016年12月获评研究生毕业论文开题答辩优秀报告人<br>
+                  2016年发表北大中文核心期刊2篇
+                  </div>
+                </div>
+              <% } %>
+              <div class="demo">
+                <div class="item-box clearfix">
+                  <div class="time showItem">
+                    <div contenteditable="true">2014.09-2016.06</div>
+                  </div>
+                  <div class="item showItem">
+                    <div contenteditable="true">清华大学</div>
+                  </div>
+                  <div class="item showItem">
+                    <div contenteditable="true">新闻传播学</div>
+                  </div>
+                  <div class="item showItem">
+                    <div contenteditable="true">硕士研究生</div>
+                  </div>
+                </div>
+                <div class="desc showItem">
+                  <div contenteditable="true">
+                  2016年获得研究生第一学d年特等奖学金<br>
+                  2016年11月代表北京大学新闻系参加首页北京地区新闻院系研究生论坛<br>
+                  2016年12月获评研究生毕业论文开题答辩优秀报告人<br>
+                  2016年发表北大中文核心期刊2篇
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="gzjl" class="work baseBlock clearfix">
+              <div for-type="old" for-id="gzjl" class="yt-fontBar"></div>
+              <h1 class="title">
+                <span class="circle"></span>
+                <div contenteditable="true">
+                  工作经历
+                </div>
+              </h1>
+              <% if(typeof(work)=="undefined"){ %>
+                <div class="item-box clearfix">
+                  <div class="time showItem">
+                    <div contenteditable="true">2014.5-2015.5</div>
+                  </div>
+                  <div class="item showItem">
+                    <div contenteditable="true">传媒艺术研究</div>
+                  </div>
+                  <div class="item showItem">
+                    <div contenteditable="true">《传媒艺术先锋》</div>
+                  </div>
+                  <div class="item showItem">
+                    <div contenteditable="true">执行主编</div>
+                  </div>
+                </div>
+                <div class="desc showItem">
+                  <div contenteditable="true">
+                  2016年获得研究生第一学年特等奖学金<br>
+                  2016年11月代表北京大学新闻系参加首页北京地区新闻院<br>
+                  2016年12月获评研究生毕业论文开题答辩优秀报告人<br>
+                  2016年发表北大中文核心期刊2篇<br>
+                  2016年获得研究生第一学年特等奖学金
+                  </div>
+                </div>
+              <% }else if(work.length > 0){ %>
+                <%for(var i=0;i<work.length;i++){%>
+                  <div class="item-box clearfix">
+                    <div class="time showItem">
+                      <div contenteditable="true">
+                        <% if(typeof(work[i].time)=="undefined"){ %>
+                          2014.09-2016.06
+                        <% }else{ %>
+                          <%=work[i].time%>
+                        <% } %>
+                      </div>
+                    </div>
+                    <div class="item showItem">
+                      <div contenteditable="true">
+                        <% if(typeof(work[i].name)=="undefined"){ %>
+                          途云内外
+                        <% }else{ %>
+                          <%=work[i].name%>
+                        <% } %>
+                      </div>
+                    </div>
+                    <div class="item showItem">
+                      <div contenteditable="true">
+                        <% if(typeof(work[i].type)=="undefined"){ %>
+                          全职
+                        <% }else{ %>
+                          <%=work[i].type%>
+                        <% } %>
+                      </div>
+                    </div>
+                    <div class="item showItem">
+                      <div contenteditable="true">
+                        <% if(typeof(work[i].position)=="undefined"){ %>
+                          执行主编
+                        <% }else{ %>
+                          <%=work[i].position%>
+                        <% } %>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="desc showItem">
+                    <div contenteditable="true">
+                      <% if(typeof(work[i].desc)=="undefined"){ %>
+                        2016年获得研究生第一学年特等奖学金<br>
+                        2016年11月代表北京大学新闻系参加首页北京地区新闻院<br>
+                        2016年12月获评研究生毕业论文开题答辩优秀报告人<br>
+                        2016年发表北大中文核心期刊2篇<br>
+                        2016年获得研究生第一学年特等奖学金
+                      <% }else{ %>
+                        <%=work[i].desc%>
+                      <% } %>
+                    </div>
+                  </div>
+                <% } %>
+              <% }else{ %>
+                <div class="item-box clearfix">
+                  <div class="time showItem">
+                    <div contenteditable="true">2014.5-2015.5</div>
+                  </div>
+                  <div class="item showItem">
+                    <div contenteditable="true">传媒艺术研究</div>
+                  </div>
+                  <div class="item showItem">
+                    <div contenteditable="true">《传媒艺术先锋》</div>
+                  </div>
+                  <div class="item showItem">
+                    <div contenteditable="true">执行主编</div>
+                  </div>
+                </div>
+                <div class="desc showItem">
+                  <div contenteditable="true">
+                  2016年获得研究生第一学年特等奖学金<br>
+                  2016年11月代表北京大学新闻系参加首页北京地区新闻院<br>
+                  2016年12月获评研究生毕业论文开题答辩优秀报告人<br>
+                  2016年发表北大中文核心期刊2篇<br>
+                  2016年获得研究生第一学年特等奖学金
+                  </div>
+                </div>
+              <% } %>
+              <div class="demo">
+                <div class="item-box clearfix">
+                  <div class="time showItem">
+                    <div contenteditable="true">2014.5-2015.5</div>
+                  </div>
+                  <div class="item showItem">
+                    <div contenteditable="true">传媒艺术研究</div>
+                  </div>
+                  <div class="item showItem">
+                    <div contenteditable="true">《传媒艺术先锋》</div>
+                  </div>
+                  <div class="item showItem">
+                    <div contenteditable="true">执行主编</div>
+                  </div>
+                </div>
+                <div class="desc showItem">
+                  <div contenteditable="true">
+                  2016年获得研究生第一学年特等奖学金<br>
+                  2016年11月代表北京大学新闻系参加首页北京地区新闻院<br>
+                  2016年12月获评研究生毕业论文开题答辩优秀报告人<br>
+                  2016年发表北大中文核心期刊2篇<br>
+                  2016年获得研究生第一学年特等奖学金
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="line"></div>
+        <div class="newDemo">
+          <div id="" class="hobby newBlock baseBlock clearfix">
+            <div for-type="old" for-id="" class="yt-fontBar"></div>
+            <h1 class="title">
+              <span class="circle"></span>
+              <div contenteditable="true">
+                自定义标题
+              </div>
+            </h1>
+            <br>
+            <div class="showItem">
+              <div contenteditable="true">自定义内容</div>
+            </div>
+            <div class="demo">
+              <div class="showItem">
+                <div contenteditable="true">自定义内容</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="foo">
+          <div id="xqah" class="hobby baseBlock clearfix">
+            <div for-type="old" for-id="xqah" class="yt-fontBar"></div>
+            <h1 class="title">
+              <span class="circle"></span>
+              <div contenteditable="true">
+                兴趣爱好
+              </div>
+            </h1>
+            <% if(typeof(hobbies)=="undefined"){ %>
+              <div class="item showItem">
+                <div contenteditable="true">吉他</div>
+              </div>
+              <div class="item showItem">
+                <div contenteditable="true">吉他</div>
+              </div>
+              <div class="item showItem">
+                <div contenteditable="true">吉他</div>
+              </div>
+              <div class="item showItem">
+                <div contenteditable="true">吉他</div>
+              </div>
+              <div class="item showItem">
+                <div contenteditable="true">吉他</div>
+              </div>
+            <%}else if(hobbies.length > 0) { %>
+              <%for(var i=0;i<hobbies.length;i++){%>
+                <div class="item showItem">
+                  <div contenteditable="true"><%=hobbies[i]%></div>
+                </div>
+              <%}%>
+            <%}else{%>
+              <div class="item showItem">
+                <div contenteditable="true">吉他</div>
+              </div>
+            <%}%>
+            <div class="demo">
+              <div class="item showItem">
+                <div contenteditable="true">爱好</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+    <div id="themeStyle" class="default">
+      <div class="container clearfix">
+        <div class="avatar">
+          <input id="file" type="file">
+          <img id="avatar" src="null" alt=""></div>
+        <div class="base baseBlock">
+          <h1 class="name">
+            <div contenteditable="true">姓名：34</div></h1>
+          <div class="position">
+            <div contenteditable="true">求职意向：审计员</div></div>
+        </div>
+        <div class="line"></div>
+        <div id="self" class="self baseBlock">
+          <div for-type="old" for-id="self" class="yt-fontBar"></div>
+          <div contenteditable="true">我为人友善、真诚、做事细致、专注，有很强的责任心，学习能力与适应能力强，喜欢与他人交谈，热爱生活，性格标签是认真，有着沉静内敛，善于思考和研究的特质，作为本硕皆为新闻学专业的文科生，与文字为伴多年，文字功底扎实，文字编辑、把关、策划能力强。</div></div>
+        <div class="line"></div>
+        <div class="main clearfix">
+          <div class="left">
+            <div id="base" class="baseinfo baseBlock">
+              <div for-type="old" for-id="base" class="yt-fontBar"></div>
+              <h1 class="title">
+                <div contenteditable="true">基本信息</div>
+                <span class="circle"></span>
+              </h1>
+              <div class="item showItem">
+                <div contenteditable="true">男
+                  <span>性别</span></div>
+              </div>
+              <div class="item showItem">
+                <div contenteditable="true">北京／北京
+                  <span>现居</span></div>
+              </div>
+              <div class="item showItem">
+                <div contenteditable="true">NaN年NaN月NaN日
+                  <span>生日</span></div>
+              </div>
+              <div class="item showItem">
+                <div contenteditable="true">18000000000
+                  <span>电话</span></div>
+              </div>
+              <div class="item showItem">
+                <div contenteditable="true">3@s.com
+                  <span>邮箱</span></div>
+              </div>
+              <div class="item showItem">
+                <div contenteditable="true">不填写
+                  <span>政治面貌</span></div>
+              </div>
+              <div class="demo">
+                <div class="item showItem">
+                  <div contenteditable="true">编辑内容
+                    <span>标题</span></div>
+                </div>
+              </div>
+            </div>
+            <div id="ryjx" class="honor baseSort baseBlock">
+              <div for-type="old" for-id="ryjx" class="yt-fontBar"></div>
+              <h1 class="title">
+                <div contenteditable="true">荣誉奖项</div>
+                <span class="circle"></span>
+              </h1>
+              <div class="desc">
+                <div contenteditable="true">获得校一等奖奖学金
+                  <br>全国计算机等级三级证书
+                  <br>全国英语六级
+                  <br>获得全国会计资格资质
+                  <br>获得校一等奖奖学金</div></div>
+              <div class="demo">
+                <div class="desc showItem">
+                  <div contenteditable="true">获得校一等奖奖学金
+                    <br>全国计算机等级三级证书
+                    <br>全国英语六级
+                    <br>获得全国会计资格资质
+                    <br>获得校一等奖奖学金</div></div>
+              </div>
+            </div>
+          </div>
+          <div class="right">
+            <div id="jybj" class="education baseBlock clearfix">
+              <div for-type="old" for-id="jybj" class="yt-fontBar"></div>
+              <h1 class="title">
+                <span class="circle"></span>
+                <div contenteditable="true">教育背景</div></h1>
+              <div class="item-box clearfix">
+                <div class="time showItem">
+                  <div contenteditable="true">2014.09-2016.06</div></div>
+                <div class="item showItem">
+                  <div contenteditable="true">清华大学</div></div>
+                <div class="item showItem">
+                  <div contenteditable="true">新闻传播学</div></div>
+                <div class="item showItem">
+                  <div contenteditable="true">硕士研究生</div></div>
+              </div>
+              <div class="desc showItem">
+                <div contenteditable="true">2016年获得研究生第一学d年特等奖学金
+                  <br>2016年11月代表北京大学新闻系参加首页北京地区新闻院系研究生论坛
+                  <br>2016年12月获评研究生毕业论文开题答辩优秀报告人
+                  <br>2016年发表北大中文核心期刊2篇</div></div>
+              <div class="demo">
+                <div class="item-box clearfix">
+                  <div class="time showItem">
+                    <div contenteditable="true">2014.09-2016.06</div></div>
+                  <div class="item showItem">
+                    <div contenteditable="true">清华大学</div></div>
+                  <div class="item showItem">
+                    <div contenteditable="true">新闻传播学</div></div>
+                  <div class="item showItem">
+                    <div contenteditable="true">硕士研究生</div></div>
+                </div>
+                <div class="desc showItem">
+                  <div contenteditable="true">2016年获得研究生第一学d年特等奖学金
+                    <br>2016年11月代表北京大学新闻系参加首页北京地区新闻院系研究生论坛
+                    <br>2016年12月获评研究生毕业论文开题答辩优秀报告人
+                    <br>2016年发表北大中文核心期刊2篇</div></div>
+              </div>
+            </div>
+            <div id="gzjl" class="work baseBlock clearfix">
+              <div for-type="old" for-id="gzjl" class="yt-fontBar"></div>
+              <h1 class="title">
+                <span class="circle"></span>
+                <div contenteditable="true">工作经历</div></h1>
+              <div class="item-box clearfix">
+                <div class="time showItem">
+                  <div contenteditable="true">2014.5-2015.5</div></div>
+                <div class="item showItem">
+                  <div contenteditable="true">传媒艺术研究</div></div>
+                <div class="item showItem">
+                  <div contenteditable="true">《传媒艺术先锋》</div></div>
+                <div class="item showItem">
+                  <div contenteditable="true">执行主编</div></div>
+              </div>
+              <div class="desc showItem">
+                <div contenteditable="true">2016年获得研究生第一学年特等奖学金
+                  <br>2016年11月代表北京大学新闻系参加首页北京地区新闻院
+                  <br>2016年12月获评研究生毕业论文开题答辩优秀报告人
+                  <br>2016年发表北大中文核心期刊2篇
+                  <br>2016年获得研究生第一学年特等奖学金</div></div>
+              <div class="demo">
+                <div class="item-box clearfix">
+                  <div class="time showItem">
+                    <div contenteditable="true">2014.5-2015.5</div></div>
+                  <div class="item showItem">
+                    <div contenteditable="true">传媒艺术研究</div></div>
+                  <div class="item showItem">
+                    <div contenteditable="true">《传媒艺术先锋》</div></div>
+                  <div class="item showItem">
+                    <div contenteditable="true">执行主编</div></div>
+                </div>
+                <div class="desc showItem">
+                  <div contenteditable="true">2016年获得研究生第一学年特等奖学金
+                    <br>2016年11月代表北京大学新闻系参加首页北京地区新闻院
+                    <br>2016年12月获评研究生毕业论文开题答辩优秀报告人
+                    <br>2016年发表北大中文核心期刊2篇
+                    <br>2016年获得研究生第一学年特等奖学金</div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="line"></div>
+        <div class="newDemo">
+          <div id="" class="hobby newBlock baseBlock clearfix">
+            <div for-type="old" for-id="" class="yt-fontBar"></div>
+            <h1 class="title">
+              <span class="circle"></span>
+              <div contenteditable="true">自定义标题</div></h1>
+            <br>
+            <div class="showItem">
+              <div contenteditable="true">自定义内容</div></div>
+            <div class="demo">
+              <div class="showItem">
+                <div contenteditable="true">自定义内容</div></div>
+            </div>
+          </div>
+        </div>
+        <div id="foo">
+          <div id="xqah" class="hobby baseBlock clearfix">
+            <div for-type="old" for-id="xqah" class="yt-fontBar"></div>
+            <h1 class="title">
+              <span class="circle"></span>
+              <div contenteditable="true">兴趣爱好</div></h1>
+            <div class="item showItem">
+              <div contenteditable="true">吉他</div></div>
+            <div class="item showItem">
+              <div contenteditable="true">吉他</div></div>
+            <div class="item showItem">
+              <div contenteditable="true">吉他</div></div>
+            <div class="item showItem">
+              <div contenteditable="true">吉他</div></div>
+            <div class="item showItem">
+              <div contenteditable="true">吉他</div></div>
+            <div class="demo">
+              <div class="item showItem">
+                <div contenteditable="true">爱好</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
