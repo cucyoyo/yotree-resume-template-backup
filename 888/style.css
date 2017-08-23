@@ -1,0 +1,99 @@
+.demo,.newDemo {display: none;}
+div[contenteditable] {cursor: text;display: inline-block;vertical-align: top;}
+.yt-baseStyle .baseBlock .showItem {display: block;}
+/* theme default */
+.container{
+  position: relative;
+  font-size: 14px;
+  color: #666;
+  padding: 56px 40px;
+}
+h1 {
+	font-size: 18px;
+	font-weight: bolder;
+	color: #333;
+}
+.title{
+	border-bottom: 1px solid #979797;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+}
+section {
+	margin-bottom: 25px;
+}
+.left {
+	float: left;
+	width: 320px;
+	padding-right: 33px;
+}
+.right {
+	float: left;
+	width: 415px;
+}
+.avatar {
+	width: 135px;
+	height: 156px;
+	margin: 0 auto 30px;
+	background: #D8D8D8; 
+}
+.avatar img {
+	width: 135px;
+	height: 156px;
+}
+#base .item {
+	float: left;
+	width: 50%;
+	/*margin-right: 10px;*/
+}
+#wdjn .skill {
+	padding: 5px;
+	border: 1px solid #666;
+	border-radius: 10px;
+	display: inline-block;
+	margin-right: 10px;
+}
+.main #jybj .item-box .item,.main #sxjl .item-box .item,.main #xmjy .item-box .item,.main #pxjl .item-box .item{
+  float: left;
+  margin-right: 30px;
+  text-align: left;
+  font-size: 14px;
+  color: #333333;
+  line-height: 20px;
+  font-weight: bolder;
+}
+.main #jybj .block-item,.main #sxjl .block-item,.main #xmjy .block-item,.main #pxjl .block-item{
+	margin-top: 10px;
+}
+.main .time {
+	font-size: 14px;
+	color: #333333;
+	line-height: 20px;
+	font-weight: bolder;
+}
+.main #xqah .hobbyItem {
+  float: left;
+  width: 50px;
+  height: 50px;
+  border: 1px solid #999999;
+  margin: 20px 30px 5px 10px;
+  text-align: center;
+  line-height: 70px;
+  font-size: 10px;
+  transform: rotate(45deg);
+  -ms-transform: rotate(45deg); /* IE 9 */
+  -webkit-transform: rotate(45deg); /* Safari and Chrome */
+}
+.main #xqah .hobbyItem div{
+  margin-top: -10px;
+  margin-left: 5px;
+  transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg); /* IE 9 */
+  -webkit-transform: rotate(-45deg); /* Safari and Chrome */
+
+}
+.main #xqah .delItem {
+    transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg); /* IE 9 */
+    -webkit-transform: rotate(-45deg); /* Safari and Chrome */
+
+}
