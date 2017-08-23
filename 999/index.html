@@ -32,48 +32,52 @@
     <div id="themeStyle" class="default">
       <div class="container clearfix">
         <div class="main" id="foo">
-          <div class="left">
             <!-- 基本信息 -->
-            <div class="avatar">
-              <% if(typeof(information)=="undefined"){ %>
-                <img id="avatar" src="https://resume.yo-tree.com/static/img/no-user.png" alt="">
-              <% }else if(typeof(information.avatar)=="undefined"){ %>
-                <img id="avatar" src="https://resume.yo-tree.com/static/img/no-user.png" alt="">
-              <% }else{ %>
-                <img id="avatar" src="<%=information.avatar%>" alt="">
-              <% } %>
+            <div class="head baseBlock">
+              <div class="avatar">
+                <% if(typeof(information)=="undefined"){ %>
+                  <img id="avatar" src="https://resume.yo-tree.com/static/img/no-user.png" alt="">
+                <% }else if(typeof(information.avatar)=="undefined"){ %>
+                  <img id="avatar" src="https://resume.yo-tree.com/static/img/no-user.png" alt="">
+                <% }else{ %>
+                  <img id="avatar" src="<%=information.avatar%>" alt="">
+                <% } %>
+              </div>
+              <h1 class="showItem item">
+                <div contenteditable="true" class="font-title">
+                  <% if(typeof(information)=="undefined"){ %>
+                    姓名：xxx
+                  <% }else if(typeof(information.name)=="undefined"){ %>
+                    姓名：xxx
+                  <% }else{ %>
+                    姓名：<%=information.name%>
+                  <% } %>
+                </div>
+              </h1>
+              <div class="showItem item">
+                <div contenteditable="true" class="position clearfix">
+                  <% if(typeof(jobIntension)=="undefined"){ %>
+                    求职意向：xxx
+                  <% }else if(typeof(jobIntension[0].position)=="undefined"){ %>
+                    求职意向：xxx
+                  <% }else{ %>
+                    求职意向：<%=jobIntension[0].position%>
+                  <% } %>
+                </div>
+              </div>
             </div>
+            <div class="left">
             <section id="base" class="baseinfo baseBlock baseSort clearfix">
               <div for-type="old" for-id="base" class="yt-fontBar"></div>
               <div class="title">
+                <div class="circle"></div>
                 <h1 class="showItem">
                   <div contenteditable="true">
-                    基本信息
+                    基本资料
                   </div>
                 </h1>
               </div>
-                <div class="showItem item">
-                  <div contenteditable="true" class="font-title">
-                    <% if(typeof(information)=="undefined"){ %>
-                      姓名：xxx
-                    <% }else if(typeof(information.name)=="undefined"){ %>
-                      姓名：xxx
-                    <% }else{ %>
-                      姓名：<%=information.name%>
-                    <% } %>
-                  </div>
-                </div>
-                <div class="showItem item">
-                  <div contenteditable="true" class="position clearfix">
-                    <% if(typeof(jobIntension)=="undefined"){ %>
-                      求职意向：审计员
-                    <% }else if(typeof(jobIntension[0].position)=="undefined"){ %>
-                      求职意向：审计员
-                    <% }else{ %>
-                      求职意向：<%=jobIntension[0].position%>
-                    <% } %>
-                  </div>
-                </div>
+
                 <div class="item showItem">
                   <div contenteditable="true">
                     <% if(typeof(information)=="undefined"){ %>
@@ -161,7 +165,8 @@
             </section>
             <section id="wdjn" class="honors baseBlock">
               <div for-type="old" for-id="wdjn" class="yt-fontBar"></div>
-              <div class="title ">
+              <div class="title">
+                <div class="circle"></div>
                 <h1 class="showItem">
                   <div contenteditable="true">我的技能</div>
                 </h1>
@@ -218,6 +223,7 @@
             <section id="jxry" class="honors baseBlock">
               <div for-type="old" for-id="jxry" class="yt-fontBar"></div>
               <div class="title ">
+                <div class="circle"></div>
                 <h1 class="showItem">
                   <div contenteditable="true">奖项荣誉</div>
                 </h1>
@@ -258,6 +264,7 @@
             <section id="pxjl" class="work baseBlock baseSort clearfix">
               <div for-type="old" for-id="pxjl" class="yt-fontBar"></div>
               <div class="title">
+                <div class="circle"></div>
                 <h1 class="showItem">
                   <div contenteditable="true">
                     培训经历
@@ -303,6 +310,7 @@
             <section id="zwpj" class="personal baseBlock baseSort">
               <div for-type="old" for-id="zwpj" class="yt-fontBar"></div>
               <div class="title ">
+                <div class="circle"></div>
                 <h1 class="showItem">
                   <div contenteditable="true">关于我</div>
                 </h1>
@@ -332,6 +340,7 @@
             <section id="jybj" class="education baseBlock baseSort">
               <div for-type="old" for-id="jybj" class="yt-fontBar"></div>
               <div class="title ">
+                <div class="circle"></div>
                 <h1 class="showItem">
                   <div contenteditable="true">教育背景</div>
                 </h1>
@@ -462,6 +471,7 @@
             <section id="sxjl" class="practical baseBlock baseSort">
               <div for-type="old" for-id="sxjl" class="yt-fontBar"></div>
               <div class="title ">
+                <div class="circle"></div>
                 <h1 class="showItem">
                   <div contenteditable="true">实习经历</div>
                 </h1>
@@ -599,6 +609,7 @@
             <section id="xmjy" class="work baseBlock baseSort clearfix">
               <div for-type="old" for-id="xmjy" class="yt-fontBar"></div>
               <div class="title ">
+                <div class="circle"></div>
                 <h1 class="showItem">
                   <div contenteditable="true">项目经验</div>
                 </h1>
@@ -692,6 +703,7 @@
 
               <div for-type="old" for-id="xqah" class="yt-fontBar"></div>
               <div class="title ">
+                <div class="circle"></div>
                 <h1 class="showItem">
                   <div contenteditable="true">兴趣爱好</div>
                 </h1>

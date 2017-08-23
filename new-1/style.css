@@ -1,24 +1,28 @@
 .demo,.newDemo {display: none;}
 div[contenteditable] {cursor: text;display: inline-block;vertical-align: top;}
 .yt-baseStyle .baseBlock .showItem {display: block;}
-.yt-baseStyle .newBlock .showItem {display: inline-block;}
-.yt-baseStyle .newBlock .showItem:hover {padding: 5px; cursor: move;}
 /* theme default */
+.container {
+  position: relative;
+  font-size: 14px;
+  color: #666;
+  padding: 35px;
+}
 .square {
-  display: inline-block;
-  width: 18px;
-  height: 18px;
+  width: 12px;
+  height: 12px;
   background-color: #108676;
   border-radius: 4px;
-  margin: auto 0;
+  position: absolute;
+  top: 7px;
 }
 .circle {
-  display: inline-block;
-  width: 44px;
-  height: 44px;
+  width: 16px;
+  height: 16px;
   background: #108676;
-  border-radius: 22px;
-  margin-right: 5px;
+  border-radius: 8px;
+  position: absolute;
+  top: 6px;
 }
 .line {
     display: inline-block;
@@ -28,32 +32,27 @@ div[contenteditable] {cursor: text;display: inline-block;vertical-align: top;}
     position: absolute;
     top:0;
     bottom:0;
-    left: 220px;
+    left: 110px;
     right: 0px;
-
 }
 .desc {
   line-height: 35px;
-}
-.default .container{
-  position: relative;
-  padding: 70px 70px;
 }
 .default .container header {
   position: relative;
   width: 100%;
 }
 .default .container header .avatar {
-  height: 7cm;
-  width: 5cm;
+  width: 135px;
+  height: 156px;
   background-color: #108676;
   border: 1px solid #108676;
   border-radius: 3px;
   float: left;
 }
 .default .container header .avatar img{
-  height: 7cm;
-  width: 7cm;
+  width: 135px;
+  height: 156px;
 }
 .default .container header .position {
   margin-left: 10px;
@@ -68,9 +67,8 @@ div[contenteditable] {cursor: text;display: inline-block;vertical-align: top;}
   width: 70%;
 }
 header .baseBlock .baseinfo .name div{
-  /*float: right;*/
   border-bottom: 1px solid #000;
-  font-size: 35px;
+  font-size: 20px;
   font-weight: bold;
   padding: 10px;
   color: #108676;
@@ -87,56 +85,44 @@ header .baseBlock .baseinfo .baseContent {
 header .baseBlock .baseinfo .baseContent span {
   width: 50%;
   float: left;
-  line-height: 35px;
-  font-size: 18px;
+  font-size: 14px;
+  position: relative;
+}
+header .baseBlock .baseinfo .baseContent span div:nth-child(2){
+  margin-left: 16px;
 }
 .main section{
-  margin-top: 40px;
+  margin-top: 20px;
 }
-
 .main h1 {
   position: relative;
-  font-size: 30px;
+  font-size: 18px;
   color: #108676;
-  font-weight: bold;
+  font-weight: bolder;
 }
-.main .block-item {
-  margin-top: 0;
-  margin-left: 21px;
-  padding: 10px 20px;
+.title div:nth-child(2){
+  margin-left: 22px;
+}
+.main section{
+  padding: 10px 0 0 20px;
   border-left: #108676 3px solid;
+  margin: 50px 0 0 10px ;
 }
-
+.top {
+  margin-left: -28px;
+  margin-top: -40px;
+}
 .main .item-box .item {
-  width: 24%;
-  display: inline-block;
-  font-size: 25px;
-  color: #108676;
-  margin: 15px 0;
-  text-align: left;
-}
-.main #jybj .item-box .item {
-  width: 24%;
-  display: inline-block;
-}
-.main #jybj .item-box .desc {
-  line-height: 35px;
-}
-
-.main #gzjl .item-box .item {
-  width: 24%;
-  display: inline-block;
-}
-#jxry .desc .item{
-  width: 50%;
-  text-align: left;
-  display: inline-block;
   float: left;
+  font-size: 14px;
+  color: #108676;
+  margin: 10px 20px 5px 0 ;
+  text-align: left;
 }
 #xqah .hobbyItem{
   border: 2px solid #108676;
   border-radius: 6px;
   display: inline-block;
   margin: 0 10px;
-  padding: 10px;
+  padding: 5px;
 }

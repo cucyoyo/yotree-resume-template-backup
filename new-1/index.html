@@ -14,8 +14,8 @@
     }
 
     #resumeBox {
-      width: 1100px;
-      min-height: 1556px;
+      width: 820px;
+      min-height: 1160px;
       background-color: #fff;
       border: 1px solid #f0f0f0;
       margin: 20px auto;
@@ -54,9 +54,9 @@
               <h1 class="name" >
                 <div contenteditable="true" class="clearfix">
                   <% if(typeof(information)=="undefined"){ %>
-                    有树
+                    xxx
                   <% }else if(typeof(information.name)=="undefined"){ %>
-                    有树
+                    xxx
                   <% }else{ %>
                     <%=information.name%>
                   <% } %>
@@ -64,8 +64,8 @@
               </h1>
               <div class="baseContent clearfix">
                 <span class="phone">
-                 
-                  <div contenteditable="true"> <div class="square"></div>
+                  <div class="square"></div>
+                  <div contenteditable="true"> 
                     <% if(typeof(information)=="undefined"){ %>
                       电话：18888888888
                     <% }else if(typeof(information.phone)=="undefined"){ %>
@@ -77,9 +77,8 @@
                 </span>
                 
                 <span class="address">
-                  
-                  <div contenteditable="true">
                   <div class="square"></div>
+                  <div contenteditable="true">
                     <% if(typeof(information)=="undefined"){ %>
                       现居：北京
                     <% }else if(typeof(information.addressStr)=="undefined"){ %>
@@ -90,9 +89,8 @@
                   </div>
                 </span>
                 <span class="email">
-                  
-                  <div contenteditable="true">
                   <div class="square"></div>
+                  <div contenteditable="true">
                     <% if(typeof(information)=="undefined"){ %>
                       邮箱：12345@yo-tree.com
                     <% }else if(typeof(information.email)=="undefined"){ %>
@@ -103,9 +101,8 @@
                   </div>
                 </span>
                 <span class="birthday">
-                  
-                  <div contenteditable="true">
                   <div class="square"></div>
+                  <div contenteditable="true">
                     <% if(typeof(information)=="undefined"){ %>
                       生日：1992-09-09
                     <% }else if(typeof(information.birthdayStr)=="undefined"){ %>
@@ -116,9 +113,9 @@
                   </div>
                 </span>
                 <span class="demo">
-                  
-                  <div contenteditable="true">
                   <div class="square"></div>
+                  <div contenteditable="true">
+                  
                     标题：内容
                   </div>
                 </span>
@@ -130,11 +127,13 @@
           <!-- 教育背景 -->
           <section id="jybj" class="education baseBlock baseSort clearfix">
             <div for-type="old" for-id="jybj" class="yt-fontBar"></div>
-            <h1 class="title clearfix">
-              <div class="circle"></div>
-              <div contenteditable="true">教育背景</div>
-              <div class="line"></div>
-            </h1>
+            <div class="top">
+              <h1 class="title clearfix">
+                <div class="circle"></div>
+                <div contenteditable="true">教育背景</div>
+                <div class="line"></div>
+              </h1>
+            </div>
             <div class="block-item">
             <% if(typeof(education)=="undefined"){ %>
               <div class="item-box clearfix">
@@ -263,11 +262,13 @@
           <!-- 工作经历 -->
           <section id="gzjl" class="work baseBlock baseSort clearfix">
             <div for-type="old" for-id="gzjl" class="yt-fontBar"></div>
-            <h1 class="title showItem">
-              <div class="circle"></div>
-              <div contenteditable="true">工作经历 </div>
-              <div class="line"></div>
-            </h1>
+            <div class="top">
+              <h1 class="title clearfix">
+                <div class="circle"></div>
+                <div contenteditable="true">工作经历</div>
+                <div class="line"></div>
+              </h1>
+            </div>
             <div class="block-item">
             <% if(typeof(work)=="undefined"){ %>
               <div class="item-box clearfix">
@@ -404,11 +405,13 @@
           <!-- 项目经验 -->
           <section id="xmjy" class="work baseBlock baseSort clearfix">
             <div for-type="old" for-id="xmjy" class="yt-fontBar"></div>
-            <h1 class="title showItem">
-              <div class="circle"></div>
-              <div contenteditable="true">项目经验 </div>
-              <div class="line"></div>
-            </h1>
+            <div class="top">
+              <h1 class="title clearfix">
+                <div class="circle"></div>
+                <div contenteditable="true">项目经验</div>
+                <div class="line"></div>
+              </h1>
+            </div>
             <div class="block-item">
             <% if(typeof(project)=="undefined"){ %>
               <div class="item-box clearfix">
@@ -515,11 +518,13 @@
           <!-- 奖项荣誉 -->
           <section id="jxry" class="honors baseBlock baseSort clearfix">
             <div for-type="old" for-id="jxry" class="yt-fontBar"></div>
-            <h1 class="title showItem">
-              <div class="circle"></div>
-              <div contenteditable="true">奖项荣誉 </div>
-              <div class="line"></div>
-            </h1>
+            <div class="top">
+              <h1 class="title clearfix">
+                <div class="circle"></div>
+                <div contenteditable="true">奖项荣誉</div>
+                <div class="line"></div>
+              </h1>
+            </div>
             <div class="block-item">
               <div class="desc">
                 <div contenteditable="true">
@@ -561,11 +566,13 @@
           </section>
           <section id="xqah" class="hobby baseBlock baseSort clearfix clearfix">
             <div for-type="old" for-id="xqah" class="yt-fontBar"></div>
-            <h1 class="title">
-              <div class="circle"></div>
-              <div contenteditable="true">兴趣爱好</div>
-              <div class="line"></div>
-            </h1>
+            <div class="top">
+              <h1 class="title clearfix">
+                <div class="circle"></div>
+                <div contenteditable="true">兴趣爱好</div>
+                <div class="line"></div>
+              </h1>
+            </div>
             <br>
             <div class="block-item">
               <% if(typeof(hobbies)=="undefined"){ %>
@@ -619,11 +626,13 @@
           <!-- 自我评价 -->
           <section id="zwpj" class="personal baseBlock baseSort clearfix">
             <div for-type="old" for-id="zwpj" class="yt-fontBar"></div>
-            <h1 class="title showItem">
-              <div class="circle"></div>
-              <div contenteditable="true">自我评价</div>
-              <div class="line"></div>
-            </h1>
+            <div class="top">
+              <h1 class="title clearfix">
+                <div class="circle"></div>
+                <div contenteditable="true">自我评价</div>
+                <div class="line"></div>
+              </h1>
+            </div>
             <div class="block-item">
               <div class="desc showItem">
                 <div contenteditable="true">
@@ -651,11 +660,13 @@
             <!-- 新模块 DEMO -->
             <section id="" class="newBlock baseBlock baseSort clearfix">
               <div for-type="old" for-id="" class="yt-fontBar"></div>
-              <h1 class="title showItem">
-                <div class="circle"></div>
-                <div contenteditable="true">新模块标题 </div>
-                <div class="line"></div>
-              </h1>
+              <div class="top">
+                <h1 class="title clearfix">
+                  <div class="circle"></div>
+                  <div contenteditable="true">新模块</div>
+                  <div class="line"></div>
+                </h1>
+              </div>
               <br>
               <div class="block-item">
                 <div class="showItem">
