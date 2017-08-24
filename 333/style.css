@@ -8,35 +8,35 @@ div[contenteditable] {cursor: text;display: inline-block;vertical-align: top;}
   font-size: 14px;
   color: #666;
 }
-h1 {
+.wy-theme h1 {
   font-size: 18px;
   color: #333;
   font-weight: bolder;
 }
-section{
+.wy-theme section{
   margin-top: 10px;
 }
-.main .avatar{
+.wy-theme .main .avatar{
   float: left;
   width: 145px;
   height: 191px;
   background: #E6E4E4;
   margin-right: 10px;
 }
-.main .avatar img {
+.wy-theme .main .avatar img {
   width: 145px;
   height: 191px;
 }
-#base {
+.wy-theme #base {
   float: left;
   margin-right: 25px;
 }
-.top-right{
+.wy-theme .top-right{
   position: absolute;
   left: 400px;
   right: 10px;
 }
-.main #jybj .item-box .item,.main #sxjl .item-box .item,.main #xmjy .item-box .item,.main #pxjl .item-box .item{
+.wy-theme .main #jybj .item-box .item,.main #sxjl .item-box .item,.main #xmjy .item-box .item,.main #pxjl .item-box .item{
   float: left;
   margin-right: 20px;
   text-align: left;
@@ -45,13 +45,13 @@ section{
   font-weight: bolder;
   line-height: 25px;
 }
-.main #sxjl .half{
+.wy-theme .main #sxjl .half{
   display: inline-block;
   width: 45%;
   margin-right: 20px;
   margin-bottom: 15px;
 }
-.default .container .main .hobby .hobbyItem {
+.wy-theme  .main .hobby .hobbyItem {
   width: 46px;
   height: 46px;
   line-height: 46px;

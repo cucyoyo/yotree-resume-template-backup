@@ -4,20 +4,20 @@ div[contenteditable] {cursor: text;display: inline-block;vertical-align: top;}
 /*.yt-baseStyle .newBlock .showItem {display: inline-block;}*/
 .yt-baseStyle .newBlock .showItem:hover {padding: 5px; cursor: move;}
 /* theme default */
-.default .container{
+.container{
   position: relative;
   padding: 20px 25px 25px 57px;
   font-size: 14px;
 }
-.default .container h1 {
+.wy-theme h1 {
   font-weight: bolder;
   font-size: 18px;
   color: #8BC3DE;
 }
-.container #base h1{
+.wy-theme  #base h1{
   color: #333;
 }
-.container .left{
+.wy-theme  .left{
   width: 37px;
   position: absolute;
   left: 0;
@@ -25,7 +25,7 @@ div[contenteditable] {cursor: text;display: inline-block;vertical-align: top;}
   bottom: 0;
   background: #8BC3DE; 
 }
-.main .avatar{
+.wy-theme .main .avatar{
   height: 191px;
   width: 145px;
   display: inline-block;
@@ -33,39 +33,39 @@ div[contenteditable] {cursor: text;display: inline-block;vertical-align: top;}
   float: left;
   margin-right: 20px; 
 }
-.main .avatar img{
+.wy-theme .main .avatar img{
   height: 191px;
   width: 145px;
 }
 
-.main #base .header-box .name{
+.wy-theme .main #base .header-box .name{
   float: left;
   margin-right: 40px;
   font-size: 20px;
 }
-.main #base .header-box .position{
+.wy-theme .main #base .header-box .position{
   float: left;
 }
-.main #base .header-box .height {
+.wy-theme .main #base .header-box .height {
   height: 22px;
   width: 10px;
   display: inline-block;
 }
-.main #base .header-box{
+.wy-theme .main #base .header-box{
   margin-left: 165px;
   padding: 40px 0 8px;
   border-bottom: 1px solid #979797;
 }
-.main #base .item {
+.wy-theme .main #base .item {
   float: left;
   margin-right: 30px;
 }
-.container .main .title{
+.wy-theme  .main .title{
   margin: 16px 0 6px;
   padding-bottom: 8px;
   border-bottom: 1px solid #979797;
 }
-.main #jybj .item-box .item,.main #sxjl .item-box .item,.main #xmjy .item-box .item{
+.wy-theme .main #jybj .item-box .item,.main #sxjl .item-box .item,.main #xmjy .item-box .item{
   float: left;
   margin-right: 30px;
   text-align: left;
@@ -73,11 +73,11 @@ div[contenteditable] {cursor: text;display: inline-block;vertical-align: top;}
   color: #333333;
   line-height: 22px;
 }
-.main #jxry .jx{
+.wy-theme .main #jxry .jx{
   float: left;
   margin-right: 50px;
 }
-.main #xqah .hobbyItem{
+.wy-theme .main #xqah .hobbyItem{
   float: left;
   width: 48px;
   height: 48px;

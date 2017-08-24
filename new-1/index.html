@@ -29,7 +29,7 @@
   </div>
   <script id="default" type="text/html">
     <div id="themeStyle" class="default">
-      <div class="container clearfix">
+      <div class="container clearfix wy-theme">
         <header class="clearfix">
           <div class="avatar">
             <% if(typeof(information)=="undefined"){ %>
@@ -49,10 +49,9 @@
               求职意向：<%=jobIntension[0].position%>
             <% } %>
           </div>
-          <div class="baseBlock clearfix">
-            <div class="baseinfo">
-              <h1 class="name" >
-                <div contenteditable="true" class="clearfix">
+          <div id="base" class="baseBlock clearfix">
+            <div for-type="old" for-id="base" class="yt-fontBar"></div>
+                <div contenteditable="true" class="clearfix name">
                   <% if(typeof(information)=="undefined"){ %>
                     xxx
                   <% }else if(typeof(information.name)=="undefined"){ %>
@@ -61,9 +60,7 @@
                     <%=information.name%>
                   <% } %>
                 </div>
-              </h1>
-              <div class="baseContent clearfix">
-                <span class="phone">
+                <span class="phone showItem">
                   <div class="square"></div>
                   <div contenteditable="true"> 
                     <% if(typeof(information)=="undefined"){ %>
@@ -74,9 +71,8 @@
                       电话：<%=information.phone%>
                     <% } %>
                   </div>
-                </span>
-                
-                <span class="address">
+                </span>             
+                <span class="address showItem">
                   <div class="square"></div>
                   <div contenteditable="true">
                     <% if(typeof(information)=="undefined"){ %>
@@ -88,7 +84,7 @@
                     <% } %>
                   </div>
                 </span>
-                <span class="email">
+                <span class="email showItem">
                   <div class="square"></div>
                   <div contenteditable="true">
                     <% if(typeof(information)=="undefined"){ %>
@@ -100,7 +96,7 @@
                     <% } %>
                   </div>
                 </span>
-                <span class="birthday">
+                <span class="birthday showItem">
                   <div class="square"></div>
                   <div contenteditable="true">
                     <% if(typeof(information)=="undefined"){ %>
@@ -112,15 +108,15 @@
                     <% } %>
                   </div>
                 </span>
-                <span class="demo">
+                <div class="demo">
+                  <span class="showItem">
                   <div class="square"></div>
                   <div contenteditable="true">
                   
                     标题：内容
                   </div>
-                </span>
-              </div>
-            </div>
+                  </span>
+                </div>
           </div>
         </header>
         <div class="main" id="foo">

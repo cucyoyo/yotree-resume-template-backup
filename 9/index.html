@@ -30,10 +30,10 @@
   </div>
   <script id="default" type="text/html">
     <div id="themeStyle" class="default">
-      <div class="container clearfix">
+      <div class="container clearfix wy-theme">
         <div class="main" id="foo">
           <!-- 基本信息 -->
-          <div id="base" class="baseinfo baseBlock baseSort clearfix">
+          <div id="base" class="baseinfo baseBlock clearfix">
             <div for-type="old" for-id="base" class="yt-fontBar"></div>
             <div class="header-box">
               <div class="avatar">
@@ -562,9 +562,8 @@
               </div>
             </div>
           </section>
-          <!-- 奖项荣誉 & 兴趣爱好 -->
-          <div class="clearfix baseSort">
-            <section id="jxry" class="honors baseBlock">
+  
+            <section id="jxry" class="honors baseBlock baseSort">
               <div for-type="old" for-id="jxry" class="yt-fontBar"></div>
               <h1 class="title showItem">
                 <div contenteditable="true">奖项荣誉</div>
@@ -574,7 +573,7 @@
               </div>
               <!-- <div></div> -->
               <div class="content">
-                <div class="desc">
+                <div class="desc showItem">
                   <div contenteditable="true">
                     <% if(typeof(certificate)=="undefined"){ %>
                       <div class="jx">xxxxxxxxx奖学金</div>
@@ -610,7 +609,7 @@
                 </div>
               </div>
             </section>
-            <section id="xqah" class="hobby baseBlock clearfix">
+            <section id="xqah" class="hobby baseBlock clearfix baseSort">
 
               <div for-type="old" for-id="xqah" class="yt-fontBar"></div>
               <h1 class="title showItem">
@@ -668,7 +667,6 @@
                 </div>
               </div>
             </section>
-          </div>
           <div class="newDemo">
             <section id="" class="newBlock baseBlock baseSort">
               <div for-type="old" for-id="" class="yt-fontBar"></div>

@@ -32,37 +32,30 @@
     <div id="themeStyle" class="default">
       <div class="container clearfix wy-theme">
         <div class="main" id="foo">
-          <div class="left">
-            <!-- 基本信息 -->
-            <div class="avatar">
-              <% if(typeof(information)=="undefined"){ %>
-                <img id="avatar" src="https://resume.yo-tree.com/static/img/no-user.png" alt="">
-              <% }else if(typeof(information.avatar)=="undefined"){ %>
-                <img id="avatar" src="https://resume.yo-tree.com/static/img/no-user.png" alt="">
-              <% }else{ %>
-                <img id="avatar" src="<%=information.avatar%>" alt="">
-              <% } %>
-            </div>
-            <section id="base" class="baseinfo baseBlock baseSort clearfix">
-              <div for-type="old" for-id="base" class="yt-fontBar"></div>
-              <div class="title">
-                <h1 class="showItem">
-                  <div contenteditable="true">
-                    基本信息
-                  </div>
-                </h1>
+          <!-- 基本信息 -->
+          <div id="base" class="baseinfo baseBlock clearfix">
+            <div for-type="old" for-id="base" class="yt-fontBar"></div>
+              <div class="avatar">
+                <% if(typeof(information)=="undefined"){ %>
+                  <img id="avatar" src="https://resume.yo-tree.com/static/img/no-user.png" alt="">
+                <% }else if(typeof(information.avatar)=="undefined"){ %>
+                  <img id="avatar" src="https://resume.yo-tree.com/static/img/no-user.png" alt="">
+                <% }else{ %>
+                  <img id="avatar" src="<%=information.avatar%>" alt="">
+                <% } %>
               </div>
-                <div class="showItem item">
+              <div class="header-box">
+                <h1 class="showItem item">
                   <div contenteditable="true" class="font-title">
                     <% if(typeof(information)=="undefined"){ %>
-                      姓名：xxx
+                      xxx
                     <% }else if(typeof(information.name)=="undefined"){ %>
-                      姓名：xxx
+                      xxx
                     <% }else{ %>
-                      姓名：<%=information.name%>
+                      <%=information.name%>
                     <% } %>
                   </div>
-                </div>
+                </h1>
                 <div class="showItem item">
                   <div contenteditable="true" class="position clearfix">
                     <% if(typeof(jobIntension)=="undefined"){ %>
@@ -74,91 +67,93 @@
                     <% } %>
                   </div>
                 </div>
+              </div>
+              <div class="item showItem">
+                <div contenteditable="true">
+                  <% if(typeof(information)=="undefined"){ %>
+                    生日：xxxx-xx-xx
+                  <% }else if(typeof(information.birthdayStr)=="undefined"){ %>
+                    生日：xxxx-xx-xx
+                  <% }else{ %>
+                    生日：<%=information.birthdayStr%>
+                  <% } %>
+                </div>
+              </div>
+              <div class="item showItem">
+                <div contenteditable="true">
+                  <% if(typeof(information)=="undefined"){ %>
+                    性别：xx
+                  <% }else if(typeof(information.gender)=="undefined"){ %>
+                    性别：xx
+                  <% }else{ %>
+                    性别：<%=information.gender%>
+                  <% } %>
+                </div>
+              </div>
+              <div class="item showItem">
+                <div contenteditable="true">
+                  <% if(typeof(information)=="undefined"){ %>
+                    电话：1xxxxxxxxxx
+                  <% }else if(typeof(information.phone)=="undefined"){ %>
+                    电话：1xxxxxxxxxx
+                  <% }else{ %>
+                    电话：<%=information.phone%>
+                  <% } %>
+                </div>
+              </div>
+              <div class="item showItem">
+                <div contenteditable="true">
+                  <% if(typeof(information)=="undefined"){ %>
+                    籍贯：xxx
+                  <% }else if(typeof(information.nativeStr)=="undefined"){ %>
+                    籍贯：xxx
+                  <% }else{ %>
+                    籍贯：<%=information.nativeStr%>
+                  <% } %>
+                </div>
+              </div>
+              <div class="item showItem">
+                <div contenteditable="true">
+                  <% if(typeof(information)=="undefined"){ %>
+                    邮箱：xxxx@xxx.xxx
+                  <% }else if(typeof(information.email)=="undefined"){ %>
+                    邮箱：xxxx@xxx.xxx
+                  <% }else{ %>
+                    邮箱：<%=information.email%>
+                  <% } %>
+                </div>
+              </div>
+              <div class="item showItem">
+                <div contenteditable="true">
+                  <% if(typeof(information)=="undefined"){ %>
+                    现居：xxx
+                  <% }else if(typeof(information.addressStr)=="undefined"){ %>
+                    现居：xxx
+                  <% }else{ %>
+                    现居：<%=information.addressStr%>
+                  <% } %>
+                </div>
+              </div>
+              <div class="item showItem">
+                <div contenteditable="true">
+                  <% if(typeof(information)=="undefined"){ %>
+                    政治面貌：xxxx
+                  <% }else if(typeof(information.politics)=="undefined"){ %>
+                    政治面貌：xxxx
+                  <% }else{ %>
+                    政治面貌：<%=information.politics%>
+                  <% } %>
+                </div>
+              </div>
+              <div class="demo">
                 <div class="item showItem">
                   <div contenteditable="true">
-                    <% if(typeof(information)=="undefined"){ %>
-                      生日：xxxx-xx-xx
-                    <% }else if(typeof(information.birthdayStr)=="undefined"){ %>
-                      生日：xxxx-xx-xx
-                    <% }else{ %>
-                      生日：<%=information.birthdayStr%>
-                    <% } %>
+                    标题：xxxx
                   </div>
                 </div>
-                <div class="item showItem">
-                  <div contenteditable="true">
-                    <% if(typeof(information)=="undefined"){ %>
-                      性别：xx
-                    <% }else if(typeof(information.gender)=="undefined"){ %>
-                      性别：xx
-                    <% }else{ %>
-                      性别：<%=information.gender%>
-                    <% } %>
-                  </div>
-                </div>
-                <div class="item showItem">
-                  <div contenteditable="true">
-                    <% if(typeof(information)=="undefined"){ %>
-                      电话：1xxxxxxxxxx
-                    <% }else if(typeof(information.phone)=="undefined"){ %>
-                      电话：1xxxxxxxxxx
-                    <% }else{ %>
-                      电话：<%=information.phone%>
-                    <% } %>
-                  </div>
-                </div>
-                <div class="item showItem">
-                  <div contenteditable="true">
-                    <% if(typeof(information)=="undefined"){ %>
-                      籍贯：xxx
-                    <% }else if(typeof(information.nativeStr)=="undefined"){ %>
-                      籍贯：xxx
-                    <% }else{ %>
-                      籍贯：<%=information.nativeStr%>
-                    <% } %>
-                  </div>
-                </div>
-                <div class="item showItem">
-                  <div contenteditable="true">
-                    <% if(typeof(information)=="undefined"){ %>
-                      邮箱：xxxx@xxx.xxx
-                    <% }else if(typeof(information.email)=="undefined"){ %>
-                      邮箱：xxxx@xxx.xxx
-                    <% }else{ %>
-                      邮箱：<%=information.email%>
-                    <% } %>
-                  </div>
-                </div>
-                <div class="item showItem">
-                  <div contenteditable="true">
-                    <% if(typeof(information)=="undefined"){ %>
-                      现居：xxx
-                    <% }else if(typeof(information.addressStr)=="undefined"){ %>
-                      现居：xxx
-                    <% }else{ %>
-                      现居：<%=information.addressStr%>
-                    <% } %>
-                  </div>
-                </div>
-                <div class="item showItem">
-                  <div contenteditable="true">
-                    <% if(typeof(information)=="undefined"){ %>
-                      政治面貌：xxxx
-                    <% }else if(typeof(information.politics)=="undefined"){ %>
-                      政治面貌：xxxx
-                    <% }else{ %>
-                      政治面貌：<%=information.politics%>
-                    <% } %>
-                  </div>
-                </div>
-                <div class="demo">
-                  <div class="item showItem">
-                    <div contenteditable="true">
-                      标题：xxxx
-                    </div>
-                  </div>
-                </div>
-            </section>
+              </div>
+          </div>
+          <div class="left">
             <section id="wdjn" class="honors baseBlock baseSort">
               <div for-type="old" for-id="wdjn" class="yt-fontBar"></div>
               <div class="title ">
@@ -171,15 +166,24 @@
                   <div contenteditable="true">
                     xxx
                   </div>
-                </div>
-                <div class="skill showItem">
-                  <div contenteditable="true">
-                    xxx
+                  <div class="line">
+                    <div class="circle"></div>
                   </div>
                 </div>
                 <div class="skill showItem">
                   <div contenteditable="true">
                     xxx
+                  </div>
+                  <div class="line">
+                    <div class="circle"></div>
+                  </div>
+                </div>
+                <div class="skill showItem">
+                  <div contenteditable="true">
+                    xxx
+                  </div>
+                  <div class="line">
+                    <div class="circle"></div>
                   </div>
                 </div>
               <%}else if(skills.length > 0) { %>
@@ -188,6 +192,9 @@
                     <div contenteditable="true">
                       <%=skills[i].name%>
                     </div>
+                    <div class="line">
+                      <div class="circle"></div>
+                    </div>
                   </div>
                 <%}%>
               <%}else{%>
@@ -195,15 +202,24 @@
                 <div contenteditable="true">
                   xxx
                 </div>
-              </div>
-              <div class="skill showItem">
-                <div contenteditable="true">
-                  xxx
+                <div class="line">
+                  <div class="circle"></div>
                 </div>
               </div>
               <div class="skill showItem">
                 <div contenteditable="true">
                   xxx
+                </div>
+                <div class="line">
+                  <div class="circle"></div>
+                </div>
+              </div>
+              <div class="skill showItem">
+                <div contenteditable="true">
+                  xxx
+                </div>
+                <div class="line">
+                  <div class="circle"></div>
                 </div>
               </div>
               <%}%>
@@ -211,6 +227,9 @@
                 <div class="skill showItem">
                   <div contenteditable="true">
                     xxx
+                  </div>
+                  <div class="line">
+                    <div class="circle"></div>
                   </div>
                 </div>
               </div>

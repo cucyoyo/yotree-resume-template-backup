@@ -30,21 +30,21 @@
   </div>
   <script id="default" type="text/html">
     <div id="themeStyle" class="default">
-      <div class="container clearfix">
+      <div class="container clearfix wy-theme">
         <div class="left"></div>
         <div class="main" id="foo">
-          <div class="avatar">
-            <% if(typeof(information)=="undefined"){ %>
-              <img id="avatar" src="https://resume.yo-tree.com/static/img/no-user.png" alt="">
-            <% }else if(typeof(information.avatar)=="undefined"){ %>
-              <img id="avatar" src="https://resume.yo-tree.com/static/img/no-user.png" alt="">
-            <% }else{ %>
-              <img id="avatar" src="<%=information.avatar%>" alt="">
-            <% } %>
-          </div>
           <!-- 基本信息 -->
-          <section id="base" class="baseinfo baseBlock baseSort clearfix">
+          <section id="base" class="baseinfo baseBlock clearfix">
             <div for-type="old" for-id="base" class="yt-fontBar"></div>
+            <div class="avatar">
+              <% if(typeof(information)=="undefined"){ %>
+                <img id="avatar" src="https://resume.yo-tree.com/static/img/no-user.png" alt="">
+              <% }else if(typeof(information.avatar)=="undefined"){ %>
+                <img id="avatar" src="https://resume.yo-tree.com/static/img/no-user.png" alt="">
+              <% }else{ %>
+                <img id="avatar" src="<%=information.avatar%>" alt="">
+              <% } %>
+            </div>
             <div class="header-box">
               <div class="height"></div>
               <div class="showItem name">

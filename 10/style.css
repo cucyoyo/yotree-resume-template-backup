@@ -2,42 +2,42 @@
 div[contenteditable] {cursor: text;display: inline-block;vertical-align: top;}
 .yt-baseStyle .baseBlock .showItem {display: block;}
 /* theme default */
-.default .container{
+.wy-theme .container{
   position: relative;
   font-size: 14px;
   color: #333333;
   padding: 30px 50px 55px 20px;
   font-size: 14px;
 }
-#themeStyle{
+.wy-theme{
   position: relative;
 }
-.outer{
+.wy-theme .outer{
   background: #6CCFE6;
   height: 25px;
   position: absolute;
 }
-.header-short{
+.wy-theme .header-short{
   width: 44px;
   left: 0;
   top: 15px;
 }
-.header-long{
+.wy-theme .header-long{
   top: 15px;
   left: 64px;
   right: 0;
 }
-.footer-short{
+.wy-theme .footer-short{
   width: 44px;
   right: 0;
   bottom: 0;
 }
-.footer-long{
+.wy-theme .footer-long{
   right: 64px;
   bottom: 0;
   left: 0;
 }
-.circle{
+.wy-theme .circle{
   display: inline-block;
   width: 12px;
   height: 12px;
@@ -47,7 +47,7 @@ div[contenteditable] {cursor: text;display: inline-block;vertical-align: top;}
   margin-right: 8px;
   margin-top: 7px;
 }
-.main .avatar{
+.wy-theme .main .avatar{
   background: #6CCFE6;
   float: right;
   width: 124px;
@@ -55,31 +55,31 @@ div[contenteditable] {cursor: text;display: inline-block;vertical-align: top;}
   border: 1px solid #6CCFE6;
   border-radius: 62px;
   text-align: center;
-  margin-top: 30px;
+  /*margin-top: 10px;*/
 }
-.main .avatar img {
+.wy-theme .main .avatar img {
   width: 124px;
   height: 124px;
   border: 1px solid #6CCFE6;
   border-radius: 62px;
 }
-.main .h1{
+.wy-theme .main .h1{
   font-size: 18px; 
   font-weight: bolder;
 }
-.main section{
+.wy-theme .main section{
   margin-top: 22px;
 }
-.main #base {
+.wy-theme .main #base {
   margin-right: 200px;
 }
-.main #base .item{
+.wy-theme .main #base .item{
   float: left;
   width: 40%;
   margin-left: 30px
 }
 
-.main #jybj .item-box .item,.main #sxjl .item-box .item,.main #xmjy .item-box .item{
+.wy-theme .main #jybj .item-box .item,.main #sxjl .item-box .item,.main #xmjy .item-box .item{
   float: left;
   margin-right: 30px;
   text-align: left;
@@ -88,10 +88,10 @@ div[contenteditable] {cursor: text;display: inline-block;vertical-align: top;}
   line-height: 25px;
   margin-left: 30px;
 }
-.main .desc{
+.wy-theme .main .desc{
   margin-left: 30px;
 }
-.main #jxry .jx{
+.wy-theme .main #jxry .jx{
   float: left;
   margin-right: 25px;
 }

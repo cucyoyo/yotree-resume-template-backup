@@ -8,15 +8,15 @@ div[contenteditable] {cursor: text;display: inline-block;vertical-align: top;}
   color: #666;
   padding: 35px;
 }
-.square {
+.wy-theme .square {
   width: 12px;
   height: 12px;
   background-color: #108676;
   border-radius: 4px;
   position: absolute;
-  top: 7px;
+  top: 5px;
 }
-.circle {
+.wy-theme .circle {
   width: 16px;
   height: 16px;
   background: #108676;
@@ -24,7 +24,7 @@ div[contenteditable] {cursor: text;display: inline-block;vertical-align: top;}
   position: absolute;
   top: 6px;
 }
-.line {
+.wy-theme .line {
     display: inline-block;
     height: 3px;
     background: #108676;
@@ -35,14 +35,14 @@ div[contenteditable] {cursor: text;display: inline-block;vertical-align: top;}
     left: 110px;
     right: 0px;
 }
-.desc {
+.wy-theme .desc {
   line-height: 35px;
 }
-.default .container header {
+.wy-theme header {
   position: relative;
   width: 100%;
 }
-.default .container header .avatar {
+.wy-theme  header .avatar {
   width: 135px;
   height: 156px;
   background-color: #108676;
@@ -50,24 +50,25 @@ div[contenteditable] {cursor: text;display: inline-block;vertical-align: top;}
   border-radius: 3px;
   float: left;
 }
-.default .container header .avatar img{
+.wy-theme header .avatar img{
   width: 135px;
   height: 156px;
 }
-.default .container header .position {
+.wy-theme header .position {
   margin-left: 10px;
   position: absolute;
   top: 0;
   font-size: 15px;
 }
-.default .container header .baseBlock {
+.wy-theme  header .baseBlock {
   position: absolute;
   bottom: 0;
   right: 0;
   width: 70%;
+  border-bottom: 0.1px solid #666;
 }
-header .baseBlock .baseinfo .name div{
-  border-bottom: 1px solid #000;
+.wy-theme header .baseBlock  .name{
+  border-bottom: 1px solid #666;
   font-size: 20px;
   font-weight: bold;
   padding: 10px;
@@ -75,51 +76,45 @@ header .baseBlock .baseinfo .name div{
   width: 100%;
   text-align: right;
 }
-header .baseBlock .baseinfo .baseContent{
-  border-bottom: 1px solid #000;
-}
-header .baseBlock .baseinfo .baseContent {
-  border-bottom: 1px solid #000;
-  padding: 5px 0;
-}
-header .baseBlock .baseinfo .baseContent span {
-  width: 50%;
+.wy-theme header .baseBlock span {
+  width: 45%;
+  margin-right: 25px;
   float: left;
   font-size: 14px;
   position: relative;
 }
-header .baseBlock .baseinfo .baseContent span div:nth-child(2){
+.wy-theme header .baseBlock span div:nth-child(2){
   margin-left: 16px;
 }
-.main section{
+.wy-theme .main section{
   margin-top: 20px;
 }
-.main h1 {
+.wy-theme .main h1 {
   position: relative;
   font-size: 18px;
   color: #108676;
   font-weight: bolder;
 }
-.title div:nth-child(2){
+.wy-theme .title div:nth-child(2){
   margin-left: 22px;
 }
-.main section{
+.wy-theme .main section{
   padding: 10px 0 0 20px;
   border-left: #108676 3px solid;
   margin: 50px 0 0 10px ;
 }
-.top {
+.wy-theme .top {
   margin-left: -28px;
   margin-top: -40px;
 }
-.main .item-box .item {
+.wy-theme .main .item-box .item {
   float: left;
   font-size: 14px;
   color: #108676;
   margin: 10px 20px 5px 0 ;
   text-align: left;
 }
-#xqah .hobbyItem{
+.wy-theme #xqah .hobbyItem{
   border: 2px solid #108676;
   border-radius: 6px;
   display: inline-block;

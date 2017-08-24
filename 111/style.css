@@ -2,97 +2,97 @@
 div[contenteditable] {cursor: text;display: inline-block;vertical-align: top;}
 .yt-baseStyle .baseBlock .showItem {display: block;}
 /* theme default */
-.default .container{
+.wy-theme  .container{
   position: relative;
   font-size: 14px;
   color: #666;
   padding: 30px 30px 30px 20px;
   font-size: 14px;
 }
-.block-top {
+.wy-theme .block-top {
   float: left;
 }
-.block-top .big {
+.wy-theme .block-top .big {
   width: 46px;
   height: 191px;
   background: #59789B;
   margin-bottom: 10px;
 }
-.block-top .small {
+.wy-theme .block-top .small {
   width: 46px;
   height: 15px;
   background: #F8E71C;
 }
 
-.title1{
+.wy-theme .title1{
   font-size: 18px;
   color: #333;
   font-weight: bolder;
 }
-.main section{
+.wy-theme .main section{
   margin-top: 30px;
 }
-.avatar {
+.wy-theme .avatar {
   float: left;
   margin: 0 20px 0 10px;
   width: 145px;
   height: 191px;
   background: #D8D8D8;
 }
-.avatar img{
+.wy-theme .avatar img{
   width: 145px;
   height: 191px;
 }
-#base {
+.wy-theme #base {
   padding-bottom: 20px;
   border-bottom: 1px solid #979797;
 }
-#base .name{
+.wy-theme #base .name{
   margin-left: 220px;
   padding: 44px 0 10px 0;
   border-bottom: 1px solid #979797;
 }
-#base .item {
+.wy-theme #base .item {
   float: left;
   margin-right: 30px;
   line-height: 30px;
 }
 
-.block {
+.wy-theme .block {
   height: 24px;
   background: #59789B;
   position: absolute;
 }
-.block1,.block4 {
+.wy-theme .block1,.block4 {
   width: 4px;
 }
-.block1{
+.wy-theme .block1{
   margin-left: -150px;
 }
 
-.block2 {
+.wy-theme .block2 {
   margin-left: -141px;
   width: 12px;
 }
-.block3 {
+.wy-theme .block3 {
   margin-left: -31px;
   width: 12px;
 }
-.block4{
+.wy-theme .block4{
   margin-left: -14px;
 }
-.main section .title-name{
+.wy-theme .main section .title-name{
   position: absolute;
   margin-left: -119px;
 }
 
-.main section {
+.wy-theme .main section {
   position: relative;
   margin-left: 150px;
   padding-bottom: 7px; 
   border-bottom:  1px solid #979797;
 }
-.main #jybj .item-box .item,.main #sxjl .item-box .item,.main #xmjy .item-box .item{
+.wy-theme .main #jybj .item-box .item,.main #sxjl .item-box .item,.main #xmjy .item-box .item{
   float: left;
   margin-right: 30px;
   text-align: left;
@@ -100,7 +100,7 @@ div[contenteditable] {cursor: text;display: inline-block;vertical-align: top;}
   font-weight: bolder;
   line-height: 25px;
 }
-.main #xqah .hobbyItem {
+.wy-theme .main #xqah .hobbyItem {
   float: left;
   width: 50px;
   height: 50px;
@@ -113,7 +113,7 @@ div[contenteditable] {cursor: text;display: inline-block;vertical-align: top;}
   -ms-transform: rotate(45deg); /* IE 9 */
   -webkit-transform: rotate(45deg); /* Safari and Chrome */
 }
-.main #xqah .hobbyItem div{
+.wy-theme .main #xqah .hobbyItem div{
   margin-top: -10px;
   margin-left: 5px;
   transform: rotate(-45deg);
@@ -121,7 +121,7 @@ div[contenteditable] {cursor: text;display: inline-block;vertical-align: top;}
   -webkit-transform: rotate(-45deg); /* Safari and Chrome */
 
 }
-.main #xqah .delItem {
+.wy-theme .main #xqah .delItem {
     transform: rotate(-45deg);
     -ms-transform: rotate(-45deg); /* IE 9 */
     -webkit-transform: rotate(-45deg); /* Safari and Chrome */
