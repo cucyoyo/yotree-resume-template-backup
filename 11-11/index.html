@@ -32,6 +32,7 @@
     <div id="themeStyle" class="default">
       <div class="container clearfix wy-theme">
         <div class="main" id="foo">
+          <div class="back"></div>
           <!-- 基本信息 -->
           <div id="base" class="baseinfo baseBlock clearfix">
             <div for-type="old" for-id="base" class="yt-fontBar"></div>
@@ -134,7 +135,7 @@
               </div>
           </div>
           <div class="left">
-            <section id="wdjn" class="honors baseBlock baseSort">
+            <section id="wdjn" class="honors baseBlock baseSort clearfix">
               <div for-type="old" for-id="wdjn" class="yt-fontBar"></div>
               <div class="title ">
                 <h1 class="showItem">
@@ -146,24 +147,15 @@
                   <div contenteditable="true">
                     xxx
                   </div>
-                  <div class="line">
-                    <div class="circle"></div>
-                  </div>
                 </div>
                 <div class="skill showItem">
                   <div contenteditable="true">
                     xxx
                   </div>
-                  <div class="line">
-                    <div class="circle"></div>
-                  </div>
                 </div>
                 <div class="skill showItem">
                   <div contenteditable="true">
                     xxx
-                  </div>
-                  <div class="line">
-                    <div class="circle"></div>
                   </div>
                 </div>
               <%}else{ %>
@@ -171,9 +163,6 @@
                   <div class="skill showItem">
                     <div contenteditable="true">
                       <%=skills[i].name%>
-                    </div>
-                    <div class="line">
-                      <div class="circle"></div>
                     </div>
                   </div>
                 <%}%>
@@ -184,13 +173,10 @@
                   <div contenteditable="true">
                     xxx
                   </div>
-                  <div class="line">
-                    <div class="circle"></div>
-                  </div>
                 </div>
               </div>
             </section>
-            <section id="jxry" class="honors baseBlock baseSort">
+            <section id="jxry" class="honors baseBlock baseSort clearfix">
               <div for-type="old" for-id="jxry" class="yt-fontBar"></div>
               <div class="title ">
                 <h1 class="showItem">
@@ -269,7 +255,7 @@
               </div>
             </section>
             <!-- 个人简介 -->
-            <section id="zwpj" class="personal baseBlock baseSort">
+            <section id="zwpj" class="personal baseBlock baseSort clearfix">
               <div for-type="old" for-id="zwpj" class="yt-fontBar"></div>
               <div class="title ">
                 <h1 class="showItem">
@@ -296,7 +282,7 @@
           </div>
           <div class="right">
             <!-- 教育背景 -->
-            <section id="jybj" class="education baseBlock baseSort">
+            <section id="jybj" class="education baseBlock baseSort clearfix">
               <div for-type="old" for-id="jybj" class="yt-fontBar"></div>
               <div class="title ">
                 <h1 class="showItem">
@@ -403,7 +389,7 @@
               </div>
             </section>
             <!-- 实习经历 -->
-            <section id="sxjl" class="practical baseBlock baseSort">
+            <section id="sxjl" class="practical baseBlock baseSort clearfix">
               <div for-type="old" for-id="sxjl" class="yt-fontBar"></div>
               <div class="title ">
                 <h1 class="showItem">
@@ -634,8 +620,9 @@
                 </div>
             </section>
           </div>
+          <div style="clear: both;"></div>
           <div class="newDemo">
-            <section id="" class="newBlock baseBlock baseSort right">
+            <section id="" class="newBlock baseBlock baseSort clearfix">
               <div for-type="old" for-id="" class="yt-fontBar"></div>
               <div class="title ">
                 <h1 class="showItem">
@@ -644,7 +631,7 @@
               </div>
               <div class="showItem">
                 <div contenteditable="true">
-                  自定义内容
+                  请将此模块拖拽至左右两栏您需要的位置。请将此模块拖拽至左右两栏您需要的位置。请将此模块拖拽至左右两栏您需要的位置。请将此模块拖拽至左右两栏您需要的位置。请将此模块拖拽至左右两栏您需要的位置。请将此模块拖拽至左右两栏您需要的位置。请将此模块拖拽至左右两栏您需要的位置。请将此模块拖拽至左右两栏您需要的位置。请将此模块拖拽至左右两栏您需要的位置。
                 </div>
               </div>
               <div class="demo">
@@ -656,6 +643,8 @@
               </div>
             </section>
           </div>
+        </div>
+
         </div>
       </div>
     </div>

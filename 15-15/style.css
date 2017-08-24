@@ -3,68 +3,67 @@ div[contenteditable] {cursor: text;display: inline-block;vertical-align: top;}
 .yt-baseStyle .baseBlock .showItem {display: block;}
 /* theme default */
 .container{
-  position: relative;
+/*  position: relative;
   font-size: 14px;
   color: #666;
-  padding: 30px;
+  margin: 107px 18px 50px;
+  border: 1px solid #979797;
+  border-radius: 32px;
+  padding: 100px 0px 20px;*/
 }
-.wy-theme h1 {
+.wy-theme #base{
+	padding: 30px;
+	float: left;
+	border-right: 
+	border: 1px solid #979797;
+}
+
+
+/*.wy-theme h1 {
 	font-size: 18px;
 	font-weight: bolder;
-	color: #333;
-}
-.wy-theme section {
-	margin-bottom: 25px;
-}
-.wy-theme .left {
+	color: #3D92E4;
+}*/
+
+/*.wy-theme .title h1:before{
+	content: '';
+	width: 12px;
+	height: 12px;
+	border-radius: 6px;
+	background: #3D92E4;
 	float: left;
-	width: 360px;
-	padding: 20px 20px 0 0;
+	position: absolute;
+	top: 8px;
+	left: -16px;
+}*/
+
+/*.wy-theme .left {
+	float: left;
+	width: 375px;
+	margin-right: 10px;
+	padding: 0 0 0 30px;
 }
 .wy-theme .right {
-	float: left;
-	width: 360px;	
-	padding: 20px 0 0 20px;
-}
-.wy-theme  .back {
-	height: 58px;
-	background: #000000;
-	position: absolute;
-	left: 0; 
-	right: 0;
-	top: 90px;
-}
+	float: right;
+	margin-right: 15px;
+	width: 375px;
+	padding: 0 0 0 30px;
+}*/
 .wy-theme .avatar {
-	width: 114.5px;
-	height: 138px;
-	background: #D8D8D8; 
-	float: left;
-	margin-right: 30px;
+	width: 145px;
+	height: 145px;
+	border-radius: 73px;
+	background: #D8D8D8;
+	margin: -170px auto 20px; 
 }
 .wy-theme .avatar img {
-	width: 114.5px;
-	height: 138px;
+	width: 145px;
+	height: 145px;
+	border-radius: 73px;
 }
-.wy-theme #base {
-	background: #FFFFFF;
-	box-shadow: 0 0 4px 1px rgba(51,51,51,0.50);
-	border-radius: 9px;
-	padding: 20px 30px;
-	margin: 0 50px;
-}
-.wy-theme #base .header-box {
-	float: left;
-	width: 400px;
-	padding: 20px 0 10px;
-}
-.wy-theme #base .header-box h1{
-	float: left;
-	margin-right: 30px;
-}
-.wy-theme #base .item {
-	float: left;
-	margin-right: 30px;
-}
+
+
+
 .wy-theme .main #jybj .item-box .item,.wy-theme .main #sxjl .item-box .item,.main #xmjy .item-box .item,.main #pxjl .item-box .item{
   float: left;
   margin-right: 30px;
@@ -77,13 +76,8 @@ div[contenteditable] {cursor: text;display: inline-block;vertical-align: top;}
 .wy-theme .main #jybj .block-item,.main #sxjl .block-item,.main #xmjy .block-item,.main #pxjl .block-item{
 	margin-top: 10px;
 }
-.wy-theme .main .time {
-	font-size: 14px;
-	color: #333333;
-	line-height: 20px;
-	font-weight: bolder;
-}
-.wy-theme .main #xqah .hobbyItem {
+
+/*.wy-theme .main #xqah .hobbyItem {
   float: left;
   width: 50px;
   height: 50px;
@@ -93,15 +87,12 @@ div[contenteditable] {cursor: text;display: inline-block;vertical-align: top;}
   text-align: center;
   line-height: 50px;
   font-size: 10px;
-}
-.wy-theme #wdjn .skill {
+}*/
+/*.wy-theme #wdjn .skill {
 	padding: 5px;
 	border: 1px solid #666;
 	border-radius: 10px;
 	display: inline-block;
 	margin-right: 10px;
 	margin-top: 10px;
-}
-
-
-
+}*/
