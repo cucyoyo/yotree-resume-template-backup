@@ -56,8 +56,6 @@ div[contenteditable] {cursor: text;display: inline-block;vertical-align: top;}
 }
 .wy-theme header .position {
   margin-left: 10px;
-  position: absolute;
-  top: 0;
   font-size: 15px;
 }
 .wy-theme  header .baseBlock {

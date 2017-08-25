@@ -1,13 +1,8 @@
 {
     "blocks": [
         {
-            "label": "基本信息",
-            "forid": "base",
-            "checked": true
-        },
-        {
-            "label": "我的技能",
-            "forid": "wdjn",
+            "label": "联系方式",
+            "forid": "lxfs",
             "checked": true
         },
         {
@@ -16,8 +11,23 @@
             "checked": true
         },
         {
+            "label": "兴趣爱好",
+            "forid": "xqah",
+            "checked": true
+        },
+        {
+            "label": "基本信息",
+            "forid": "base",
+            "checked": true
+        },
+        {
             "label": "教育背景",
             "forid": "jybj",
+            "checked": true
+        },
+        {
+            "label": "我的技能",
+            "forid": "wdjn",
             "checked": true
         },
         {
@@ -39,18 +49,13 @@
             "label": "自我评价",
             "forid": "zwpj",
             "checked": true
-        },
-        {
-            "label": "兴趣爱好",
-            "forid": "xqah",
-            "checked": true
         }
 
     ],
     "colors": [
         {
             "label": "default",
-            "value": "#F7C033"
+            "value": "#3D92E4"
         }
     ]
 }

@@ -1,0 +1,122 @@
+.demo,.newDemo {display: none;}
+div[contenteditable] {cursor: text;display: inline-block;vertical-align: top;}
+.yt-baseStyle .baseBlock .showItem {display: block;}
+/* theme default */
+.container{
+	font-size: 14px;
+	color: #666;
+}
+.wy-theme h1 {
+	font-size: 18px;
+}
+.wy-theme .head {
+	background: #404145;
+	color: #FFFFFF;
+	text-align: center;
+	padding: 40px 0 50px;
+	/*margin-left: -343px;*/
+}
+.wy-theme .head .icon {
+	width: 100px;
+	margin: 0 auto 15px;
+}
+.wy-theme .head .icon1, .wy-theme .head .icon1{
+	float: left;
+	width: 50px;
+	height: 50px;
+	border: 1px solid #FFFFFF;
+	transform: rotate(45deg);
+	-ms-transform: rotate(45deg); /* IE 9 */
+	-webkit-transform: rotate(45deg); /* Safari and Chrome */
+}
+.wy-theme .head .name {
+	font-size: 36px;
+	line-height: 50px;
+}
+.wy-theme .head .positon {
+	font-size: 24px;
+}
+.wy-theme .left {
+	width: 260px;
+	padding-top: 30px;
+	background: #3D92E4;
+	color: #FFFFFF;
+	float: left;
+	margin: -150px 0 0 40px;
+}
+.wy-theme .left .avatar {
+	width: 168px;
+	height: 168px;
+	border-radius: 83px;
+	background: #FFFFFF; 
+	margin: 0 auto 100px;
+}
+.wy-theme .left .avatar img{
+	width: 168px;
+	height: 168px;
+	border-radius: 83px;
+}
+.wy-theme .left section {
+	margin-bottom: 30px;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+.wy-theme .left #lxfs{
+	margin-right: -10px;
+}
+.wy-theme .left section h1{
+	text-align: center;
+	line-height: 50px;
+}
+.wy-theme .left #xqah .hobbyItem {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #fff;
+  border-radius: 25px;
+  margin: 0 auto 10px;
+  text-align: center;
+  line-height: 50px;
+  font-size: 10px;
+}
+.wy-theme .main {
+	padding: 30px 30px 30px 0px;
+	float: right;
+	width: 500px;
+}
+.wy-theme .main h1{
+	color: #333;
+	line-height: 25px;
+}
+.wy-theme .main section{
+	margin-bottom: 20px;
+	padding-left: 30px;
+}
+.wy-theme .main #base .item {
+	float: left; 
+	margin-right: 30px;
+}
+.wy-theme .main section h1 div:before{
+	content: '';
+	width: 10px;
+	height: 10px;
+	transform: rotate(45deg);
+	-ms-transform: rotate(45deg); /* IE 9 */
+	-webkit-transform: rotate(45deg); /* Safari and Chrome */
+	border: 1px solid #333333; 
+	position: absolute;
+	top: 7px;
+	left: -22px;
+}
+.wy-theme .main #jybj .item-box .item,.wy-theme .main #sxjl .item-box .item,.main #xmjy .item-box .item,.main #pxjl .item-box .item{
+  float: left;
+  margin-right: 30px;
+  font-weight: bolder;
+}
+.wy-theme .main #wdjn .skill {
+	padding: 5px;
+	border: 1px solid #999999;
+	border-radius: 10px;
+	display: inline-block;
+	margin-right: 10px;
+	margin-top: 5px;
+}

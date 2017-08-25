@@ -21,6 +21,7 @@ div[contenteditable] {cursor: text;display: inline-block;vertical-align: top;}
   position: relative;
   font-size: 16px;
   color: #333333;
+  padding-top: 30px;
 }
 .wy-theme .font-title1{
   font-size: 20px;
@@ -34,7 +35,7 @@ div[contenteditable] {cursor: text;display: inline-block;vertical-align: top;}
   position: relative;
 }
 .wy-theme .main #base {
-  margin: 30px 30px 22px;
+  margin: 0 30px 22px;
 }
 .wy-theme .main #base .header-box{
   float: left;

@@ -15,17 +15,19 @@ div[contenteditable] {cursor: text;display: inline-block;vertical-align: top;}
 }
 .wy-theme section {
 	margin-bottom: 25px;
+	padding-left: 20px;
 }
 .wy-theme .left {
 	float: left;
 	width: 360px;
+	margin-left: -20px;
 	padding: 20px 20px 0 0;
 }
 .wy-theme .right {
 	float: left;
 	width: 360px;
 	border-left: 1px solid #979797;
-	padding: 20px 0 0 20px;
+	padding: 20px 0 0 0;
 }
 .wy-theme .avatar {
 	width: 120px;
@@ -88,28 +90,12 @@ div[contenteditable] {cursor: text;display: inline-block;vertical-align: top;}
   line-height: 50px;
   font-size: 10px;
 }
-.wy-theme .skill {
-	position: relative;
+.wy-theme #wdjn .skill {
+	padding: 5px;
+	border: 1px solid #666;
+	border-radius: 10px;
+	display: inline-block;
+	margin-right: 10px;
 	margin-top: 10px;
-}
-.wy-theme .skill div:nth-child(1)  {
-	width: 50px;
-}
-.wy-theme .skill .line{
-	width: 200px;
-	height: 0;
-	border: 1px solid #333333;
-	position: absolute;
-	top: 10px;
-	left: 50px;
-}
-.wy-theme .skill .line .circle {
-	width: 12px;
-	height: 12px;
-	border-radius: 6px;
-	background: #333;
-	position: absolute;
-	top: -6px;
-	left: 40px;
 }
 

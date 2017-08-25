@@ -21,6 +21,8 @@ div[contenteditable] {cursor: text;display: inline-block;vertical-align: top;}
 }
 .wy-theme section {
 	margin-bottom: 25px;
+	margin-left: -20px;
+	padding-left: 20px;
 }
 .wy-theme .left {
 	float: left;

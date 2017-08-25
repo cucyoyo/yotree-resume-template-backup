@@ -6,18 +6,13 @@
             "checked": true
         },
         {
-            "label": "我的技能",
-            "forid": "wdjn",
-            "checked": true
-        },
-        {
-            "label": "奖项荣誉",
-            "forid": "jxry",
-            "checked": true
-        },
-        {
             "label": "教育背景",
             "forid": "jybj",
+            "checked": true
+        },
+        {
+            "label": "我的技能",
+            "forid": "wdjn",
             "checked": true
         },
         {
@@ -41,6 +36,11 @@
             "checked": true
         },
         {
+            "label": "奖项荣誉",
+            "forid": "jxry",
+            "checked": true
+        },
+        {
             "label": "兴趣爱好",
             "forid": "xqah",
             "checked": true
@@ -50,7 +50,7 @@
     "colors": [
         {
             "label": "default",
-            "value": "#F7C033"
+            "value": "#3D92E4"
         }
     ]
 }
