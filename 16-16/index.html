@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- <link href="https://rsapi.yo-tree.com/css/editor.css?v=20170601" rel="stylesheet"> -->
+  <link rel="stylesheet" href="base.css">
+  <link href="style.css" rel="stylesheet">
+  <title>Document</title>
+  <style>
+    body {
+      background-color: #f9f9f9;
+    }
+
+    #resumeBox {
+      width: 820px;
+      min-height: 1160px;
+      background-color: #fff;
+      border: 1px solid #f0f0f0;
+      margin: 20px auto;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="yt-baseStyle" id="resumeBox">
+
+  </div>
+  <script id="default" type="text/html">
+    <div id="themeStyle" class="default">
+      <div class="container clearfix wy-theme">
+        <!-- 基本信息 -->
+        <div class="left">
+          <div class="avatar">
+            <% if(typeof(information)=="undefined" || typeof(information.avatar)=="undefined"){ %>
+            <img id="avatar" src="https://resume.yo-tree.com/static/img/no-user.png" alt="">
+            <% }else{ %>
+            <img id="avatar" src="<%=information.avatar%>" alt="">
+            <% } %>
+          </div>
+          <div class="top">
+            <div class="tran1"></div>
+            <div class="tran3"></div>
+            <div class="tran4"></div>
+          </div>
+          
+          <section id="base" class="baseinfo baseBlock clearfix item">
+            <div for-type="old" for-id="base" class="yt-fontBar"></div>
+            <div class="title ">
+              <h1 class="showItem">
+                <div contenteditable="true">
+                  基本信息
+                </div>
+              </h1>
+            </div>
+            <div class="name item">
+              <div contenteditable="true">
+                <% if(typeof(information)=="undefined" || typeof(information.name)=="undefined"){ %>
+                姓名：xxx
+                <% }else{ %>
+                姓名：<%=information.name%>
+                <% } %>
+              </div>
+            </div>
+            <div class="position item">
+              <div contenteditable="true">
+                <% if(typeof(jobIntension)=="undefined" || typeof(jobIntension[0].position)=="undefined"){ %>
+                求职意向：审计员
+                <% }else{ %>
+                求职意向：<%=jobIntension[0].position%>
+                <% } %>
+              </div>
+            </div>
+            <div class="item showItem" contenteditable="true">
+              <% if(typeof(information)=="undefined" || typeof(information.birthdayStr)=="undefined"){ %>
+              生日：xxxx-xx-xx
+              <% }else{ %>
+              生日：<%=information.birthdayStr%>
+              <% } %>
+            </div>
+            <div class="item showItem" contenteditable="true">
+              <% if(typeof(information)=="undefined" || typeof(information.gender)=="undefined"){ %>
+              性别：xx
+              <% }else{ %>
+              性别：<%=information.gender%>
+              <% } %>
+            </div>
+            <div class="item showItem" contenteditable="true">
+              <% if(typeof(information)=="undefined" || typeof(information.phone)=="undefined"){ %>
+              电话：1xxxxxxxxxx
+              <% }else{ %>
+              电话：<%=information.phone%>
+              <% } %>
+            </div>
+            <div class="item showItem" contenteditable="true">
+              <% if(typeof(information)=="undefined" || typeof(information.email)=="undefined"){ %>
+              邮箱：xxxx@xxx.xxx
+              <% }else{ %>
+              邮箱：<%=information.email%>
+              <% } %>
+            </div>
+            <div class="item showItem" contenteditable="true">
+              <% if(typeof(information)=="undefined" || typeof(information.nativeStr)=="undefined"){ %>
+              籍贯：xxx
+              <% }else{ %>
+              籍贯：<%=information.nativeStr%>
+              <% } %>
+            </div>
+
+            <div class="item showItem" contenteditable="true">
+              <% if(typeof(information)=="undefined" || typeof(information.addressStr)=="undefined"){ %>
+              现居：xxx
+              <% }else{ %>
+              现居：<%=information.addressStr%>
+              <% } %>
+            </div>
+            <div class="item showItem" contenteditable="true">
+              <% if(typeof(information)=="undefined" || typeof(information.politics)=="undefined"){ %>
+              政治面貌：xxxx
+              <% }else{ %>
+              政治面貌：<%=information.politics%>
+              <% } %>
+            </div>
+            <div class="demo">
+              <div class="item showItem" contenteditable="true">
+                标题：xxxx
+              </div>
+            </div>
+          </section>
+        </section>
+        <!-- 奖项荣誉 -->
+        <section id="jxry" class="honors baseBlock clearfix">
+          <div for-type="old" for-id="jxry" class="yt-fontBar"></div>
+          <div class="title">
+            <h1 class="showItem">
+              <div contenteditable="true">
+                获奖证书
+              </div>
+            </h1>
+          </div>
+          <!-- <div class="desc"> -->
+          <!-- <div contenteditable="true"> -->
+          <% if(typeof(certificate)=="undefined" || certificate.length <= 0){ %>
+          <div class="jx showItem" contenteditable="true">
+            xxxxxxxxx奖学金
+          </div>
+          <div class="jx showItem" contenteditable="true">
+            xxxxxxxxx奖学金
+          </div>
+          <div class="jx showItem" contenteditable="true">
+            xxxxxxxxx奖学金
+          </div>
+          <div class="jx showItem" contenteditable="true">
+            xxxxxxxxx奖学金
+          </div>
+          <div class="jx showItem" contenteditable="true">
+            xxxxxxxxx奖学金
+          </div>
+
+          <%}else{ %>
+          <%for(var i=0;i<certificate.length;i++){%>
+          <div class="jx showItem" contenteditable="true">
+            <%=certificate[i].name%>
+          </div>
+          <%}%>
+          <%}%>
+          <!-- </div> -->
+          <!-- </div> -->
+          <div class="demo">
+            <div class="desc">
+              <div class="jx showItem" contenteditable="true">
+                xxxxxxxxx奖学金
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- 兴趣爱好 -->
+        <section id="xqah" class="hobby baseBlock clearfix">
+          <div for-type="old" for-id="xqah" class="yt-fontBar"></div>
+          <div class="title ">
+            <h1 class="showItem">
+              <div contenteditable="true">
+                兴趣爱好
+              </div>
+            </h1>
+          </div>
+          <% if(typeof(hobbies)=="undefined" || hobbies.length <= 0){ %>
+          <div class="hobbyItem showItem">
+            <div contenteditable="true">xxx</div>
+          </div>
+          <div class="hobbyItem showItem">
+            <div contenteditable="true">xxx</div>
+          </div>
+          <div class="hobbyItem showItem">
+            <div contenteditable="true">xxx</div>
+          </div>
+          <%}else{ %>
+          <%for(var i=0;i<hobbies.length;i++){%>
+          <div class="hobbyItem showItem">
+            <div contenteditable="true"><%=hobbies[i]%></div>
+          </div>
+          <div class="hobbyItem showItem">
+            <div contenteditable="true">xxx</div>
+          </div>
+          <div class="hobbyItem showItem">
+            <div contenteditable="true">xxx</div>
+          </div>
+          <div class="hobbyItem showItem">
+            <div contenteditable="true">xxx</div>
+          </div>
+          <%}%>
+          <%}%>
+          <div class="demo">
+            <div class="hobbyItem showItem">
+              <div contenteditable="true">xxxx</div>
+            </div>
+          </div>
+        </section>
+        <section id="wdjn" class="honors baseBlock baseSort">
+          <div for-type="old" for-id="wdjn" class="yt-fontBar"></div>
+          <div class="title">
+            <h1 class="showItem">
+              <div contenteditable="true">
+                我的技能
+              </div>
+            </h1>
+          </div>
+          <!-- <div style="clear: both;"></div> -->
+          <% if(typeof(skills)=="undefined" || skills.length <= 0){ %>
+          <div class="skill showItem">
+            <div contenteditable="true">
+              xxx
+            </div>
+          </div>
+          <div class="skill showItem">
+            <div contenteditable="true">
+              xxx
+            </div>
+          </div>
+          <div class="skill showItem">
+            <div contenteditable="true">
+              xxx
+            </div>
+          </div>
+          <%}else{ %>
+          <%for(var i=0;i<skills.length;i++){%>
+          <div class="skill showItem">
+            <div contenteditable="true">
+              <%=skills[i].name%>
+            </div>
+          </div>
+          <%}%>
+          <%}%>
+          <div class="demo">
+            <div class="skill showItem">
+              <div contenteditable="true">
+                xxx
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="zwpj" class="personal baseBlock">
+          <div for-type="old" for-id="zwpj" class="yt-fontBar"></div>
+          <div class="title ">
+            <h1 class="showItem">
+              <div contenteditable="true">
+                自我评价
+              </div>
+            </h1>
+          </div>
+          <div class="desc showItem">
+            <div contenteditable="true">
+              <% if(typeof(introduce)=="undefined" || typeof(introduce.desc)=="undefined"){ %>
+              我为人友善、xxx xxx xxxx xxxxx xxxxxxxx xxxx xxxxxx xxx xxx xxxx xxx xxxxxx xxxx xxx xxxxx xx xxxxxxxx xxxxxx xx xxxx xxxxxx xxxx xxxxxxx xxxxxxx xxxxx xxxxxxx xxxx xxxxx xxxxx xxxxx xxx xxx xxxx xxx xxxxx
+              <% }else{ %>
+              <%=introduce.desc%>
+              <% } %>
+            </div>
+          </div>
+          <div class="demo">
+            <div class="desc showItem">
+              <div contenteditable="true">
+                我为人友善、xxx xxx xxxx xxxxx xxxxxxxx xxxx xxxxxx xxx xxx xxxx xxx xxxxxx xxxx xxx xxxxx xx xxxxxxxx xxxxxx xx xxxx xxxxxx xxxx xxxxxxx xxxxxxx xxxxx xxxxxxx xxxx xxxxx xxxxx xxxxx xxx xxx xxxx xxx xxxxx
+              </div>
+            </div>
+          </div>
+        </section>  
+
+      </div>
+
+      <div class="right">
+        <div class="main" id="foo">
+
+          <!-- 教育背景 -->
+          <section id="jybj" class="education baseBlock baseSort">
+
+            <div for-type="old" for-id="jybj" class="yt-fontBar"></div>
+
+            <div class="title ">
+              <h1 class="showItem">
+                <div contenteditable="true">教育背景
+                </div>
+              </h1>
+            </div>
+
+            <% if(typeof(education)=="undefined" || education.length <= 0){ %>
+
+            <div class="item-box clearfix">
+              <div class="time showItem" contenteditable="true">
+                xxxx
+              </div>
+              <div class="item showItem">
+
+                <div contenteditable="true">xxxx大学</div>
+              </div>
+              <div class="item showItem">
+                <div contenteditable="true">xxxx专业</div>
+              </div>
+
+              <div class="item showItem">
+                <div contenteditable="true">xxxxxx</div>
+              </div>
+            </div>
+            <div class="desc showItem">
+              <div contenteditable="true">
+                xxxx年获得xxxxxxxx奖学金<br>
+                xxxx年xx月xxxxxxxxxxxxxxxxxxx<br>
+                xxxx年xx月xxxxxxxxxxxxxxx优秀报告人<br>
+                xxxx年发表xxxxxxxxxxxxxxxx核心期刊2篇
+              </div>
+            </div>
+            <% }else{ %>
+            <%for(var i=0;i<education.length;i++){%>
+            <div class="item-box clearfix">
+              <div class="time showItem">
+                <div class="circle"></div>
+                <div contenteditable="true">
+                  xxxx
+                </div>
+              </div>
+              <div class="item showItem">
+                <div contenteditable="true">
+                  <% if(typeof(education[i].gxname)=="undefined"){ %>
+                  xxxx大学
+                  <% }else{ %>
+                  <%=education[i].gxname%>
+                  <% } %>
+                </div>
+              </div>
+              <div class="item showItem">
+                <div contenteditable="true">
+                  <% if(typeof(education[i].major)=="undefined"){ %>
+                  xxxx专业
+                  <% }else{ %>
+                  <%=education[i].major%>
+                  <% } %>
+                </div>
+              </div>
+              <div class="item showItem">
+                <div contenteditable="true">
+                  <% if(typeof(education[i].education)=="undefined"){ %>
+                  xxxxxx
+                  <% }else{ %>
+                  <%=education[i].education%>
+                  <% } %>
+                </div>
+              </div>
+            </div>
+            <div class="desc showItem">
+              <div contenteditable="true">
+                xxxx年获得xxxxxxxx奖学金<br>
+                xxxx年xx月xxxxxxxxxxxxxxxxxxx<br>
+                xxxx年xx月xxxxxxxxxxxxxxx优秀报告人<br>
+                xxxx年发表xxxxxxxxxxxxxxxx核心期刊2篇
+              </div>
+            </div>
+            <%}%>
+            <% } %>
+            <div class="demo">
+              <div class="item-box clearfix">
+                <div class="time showItem">
+                  <div contenteditable="true">xxxx</div>
+                </div>
+                <div class="item showItem">
+                  <div contenteditable="true">xxxx大学</div>
+                </div>
+                <div class="item showItem">
+                  <div contenteditable="true">xxxxx专业</div>
+                </div>
+                <div class="item showItem">
+                  <div contenteditable="true">xxxxxx</div>
+                </div>
+              </div>
+              <div class="desc showItem">
+                <div contenteditable="true">
+                  xxxx年获得xxxxxxxx奖学金<br>
+                  xxxx年xx月xxxxxxxxxxxxxxxxxxx<br>
+                  xxxx年xx月xxxxxxxxxxxxxxx优秀报告人<br>
+                  xxxx年发表xxxxxxxxxxxxxxxx核心期刊2篇
+                </div>
+              </div>
+            </div>
+          </section>
+
+
+          <section id="pxjl" class="work baseBlock baseSort clearfix">
+            <div for-type="old" for-id="pxjl" class="yt-fontBar"></div>
+            <div class="title">
+              <div class="circle-border">
+                <div class="big-circle"></div>
+              </div>
+              <h1 class="showItem">
+                <div contenteditable="true">
+                  培训经历
+                </div>
+              </h1>
+            </div>
+            <div class="block-item">
+              <div class="item-box clearfix">
+                <div class="time showItem">
+                  <div contenteditable="true">xxxx</div>
+                </div>
+                <div class="item showItem">
+                  <div contenteditable="true">名称xxxxx</div>
+                </div>
+              </div>
+              <div class="desc showItem">
+                <div contenteditable="true">
+                  描述xxxxxxxxxxxxxxxxxxxxxxx<br>
+                  描述xxxxxxxxxxxxxxxxxxxxxxxxxxx
+                </div>
+              </div>
+            </div>
+            <div class="demo">
+              <div class="block-item">
+                <div class="item-box clearfix">
+                  <div class="time showItem">
+                    <div contenteditable="true">xxxx</div>
+                  </div>
+                  <div class="item showItem">
+                    <div contenteditable="true">名称xxxxx</div>
+                  </div>
+                </div>
+                <div class="desc showItem">
+                  <div contenteditable="true">
+                    描述xxxxxxxxxxxxxxxxxxxxxxx<br>
+                    描述xxxxxxxxxxxxxxxxxxxxxxxxxxx
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+
+          <!-- 实习经历 -->
+          <section id="sxjl" class="practical baseBlock baseSort">
+            <div for-type="old" for-id="sxjl" class="yt-fontBar"></div>
+            <div class="title ">
+              <div class="circle-border">
+                <div class="big-circle"></div>
+              </div>
+              <h1 class="showItem">
+                <div contenteditable="true">实习经历
+                </div>
+              </h1>
+            </div>
+            <% if(typeof(work)=="undefined" || work.length <= 0){ %>
+            <div class="item-box clearfix">
+              <div class="time showItem">
+                <div contenteditable="true">xxxx</div>
+              </div>
+              <div class="item showItem">
+                <div contenteditable="true">xxxxxx公司</div>
+              </div>
+              <div class="item showItem">
+                <div contenteditable="true">xxxxxx部门</div>
+              </div>
+              <div class="item showItem">
+                <div contenteditable="true">xxxxx职位</div>
+              </div>
+            </div>
+            <div class="desc showItem">
+              <div contenteditable="true">
+                描述xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx<br>
+                描述xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx<br>
+                描述xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx<br>
+                描述xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx<br>
+                描述xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+              </div>
+            </div>
+            <% }else{ %>
+            <%for(var i=0;i<work.length;i++){%>
+            <div class="item-box clearfix">
+              <div class="time showItem">
+                <div contenteditable="true">
+                  xxxx
+                </div>
+              </div>
+              <div class="item showItem">
+                <div contenteditable="true">
+                  <% if(typeof(work[i].name)=="undefined"){ %>
+                  xxxxxx公司
+                  <% }else{ %>
+                  <%=work[i].name%>
+                  <% } %>
+                </div>
+              </div>
+              <div class="item showItem">
+                <div contenteditable="true">
+                  <% if(typeof(work[i].type)=="undefined"){ %>
+                  xxxxxx部门
+                  <% }else{ %>
+                  <%=work[i].type%>
+                  <% } %>
+                </div>
+              </div>
+              <div class="item showItem">
+                <div contenteditable="true">
+                  <% if(typeof(work[i].position)=="undefined"){ %>
+                  xxxxx职位
+                  <% }else{ %>
+                  <%=work[i].position%>
+                  <% } %>
+                </div>
+              </div>
+            </div>
+            <div class="desc showItem">
+              <div contenteditable="true">
+                <% if(typeof(work[i].desc)=="undefined"){ %>
+                描述xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx<br>
+                描述xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx<br>
+                描述xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx<br>
+                描述xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx<br>
+                描述xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+                <% }else{ %>
+                <%=work[i].desc%>
+                <% } %>
+              </div>
+            </div>
+            <% } %>
+            <% } %>
+            <div class="demo">
+
+              <div class="item-box clearfix">
+                <div class="time showItem">
+                  <div contenteditable="true">xxxx</div>
+                </div>
+                <div class="item showItem">
+                  <div contenteditable="true">xxxxxx公司</div>
+                </div>
+                <div class="item showItem">
+                  <div contenteditable="true">xxxxxx部门</div>
+                </div>
+                <div class="item showItem">
+                  <div contenteditable="true">xxxxx职位</div>
+                </div>
+              </div>
+              <div class="desc showItem">
+                <div contenteditable="true">
+                  描述xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx<br>
+                  描述xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx<br>
+                  描述xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx<br>
+                  描述xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx<br>
+                  描述xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+                </div>
+              </div>
+            </div>
+          </section>
+          <section id="xmjy" class="work baseBlock baseSort clearfix">
+            <div for-type="old" for-id="xmjy" class="yt-fontBar"></div>
+            <div class="title ">
+              <div class="circle-border">
+                <div class="big-circle"></div>
+              </div>
+              <h1 class="showItem">
+                <div contenteditable="true">项目经验
+                </div>
+              </h1>
+            </div>
+            <div class="block-item">
+              <% if(typeof(project)=="undefined" || project.length <= 0){ %>
+              <div class="item-box clearfix">
+                <div class="time showItem">
+                  <div contenteditable="true">xxxx</div>
+                </div>
+                <div class="item showItem">
+                  <div contenteditable="true">名称xxxxx</div>
+                </div>
+              </div>
+              <div class="desc showItem">
+                <div contenteditable="true">
+                  描述xxxxxxxxxxxxxxxxxxxxxxx<br>
+                  描述xxxxxxxxxxxxxxxxxxxxxxxxxxx
+                </div>
+              </div>
+              <% }else{ %>
+              <%for(var i=0;i<project.length;i++){%>
+              <div class="item-box clearfix">
+                <div class="time showItem">
+                  <div contenteditable="true">
+                    xxxx
+                  </div>
+                </div>
+                <div class="item showItem">
+                  <div contenteditable="true">
+                    <% if(typeof(project[i].name)=="undefined"){ %>
+                    名称xxxxx
+                    <% }else{ %>
+                    <%=project[i].name%>
+                    <% } %>
+                  </div>
+                </div>
+              </div>
+              <div class="desc showItem">
+                <div contenteditable="true">
+                  <% if(typeof(project[i].desc)=="undefined"){ %>
+                  描述xxxxxxxxxxxxxxxxxxxxxxx<br>
+                  描述xxxxxxxxxxxxxxxxxxxxxxxxxxx
+                  <% }else{ %>
+                  <%=project[i].desc%>
+                  <% } %>
+                </div>
+              </div>
+              <% } %>
+              <% } %>
+            </div>
+            <div class="demo">
+              <div class="block-item">
+                <div class="item-box clearfix">
+                  <div class="item showItem">
+                    <div contenteditable="true">xxxx年xx月-xxxx年xx月</div>
+                  </div>
+                  <div class="item showItem">
+                    <div contenteditable="true">名称xxxxx</div>
+                  </div>
+                </div>
+                <div class="desc showItem">
+                  <div contenteditable="true">
+                    描述xxxxxxxxxxxxxxxxxxxxxxx<br>
+                    描述xxxxxxxxxxxxxxxxxxxxxxxxxxx
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <div class="newDemo">
+            <section id="" class="newBlock baseBlock baseSort clearfix">
+              <div for-type="old" for-id="" class="yt-fontBar"></div>
+              <div class="title">
+                <div class="circle-border">
+                  <div class="big-circle"></div>
+                </div>
+                <h1 class="showItem">
+                  <div contenteditable="true">
+                    培训经历
+                  </div>
+                </h1>
+              </div>
+              <div class="block-item">
+                <div class="item-box clearfix">
+                  <div class="time showItem">
+                    <div contenteditable="true">xxxx</div>
+                  </div>
+                  <div class="item showItem">
+                    <div contenteditable="true">名称xxxxx</div>
+                  </div>
+                </div>
+                <div class="desc showItem">
+                  <div contenteditable="true">
+                    描述xxxxxxxxxxxxxxxxxxxxxxx<br>
+                    描述xxxxxxxxxxxxxxxxxxxxxxxxxxx
+                  </div>
+                </div>
+              </div>
+              <div class="demo">
+                <div class="block-item">
+                  <div class="item-box clearfix">
+                    <div class="time showItem">
+                      <div contenteditable="true">xxxx</div>
+                    </div>
+                    <div class="item showItem">
+                      <div contenteditable="true">名称xxxxx</div>
+                    </div>
+                  </div>
+                  <div class="desc showItem">
+                    <div contenteditable="true">
+                      描述xxxxxxxxxxxxxxxxxxxxxxx<br>
+                      描述xxxxxxxxxxxxxxxxxxxxxxxxxxx
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</script>
+<script src="./baiduTemplate.js"></script>
+<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript">
+  var data = {
+    "education": [{
+      gxname: "清华北大"
+    }]
+  };
+  var html = baidu.template('default', data);
+  document.getElementById('resumeBox').innerHTML = html;
+</script>
+</body>
+
+</html>

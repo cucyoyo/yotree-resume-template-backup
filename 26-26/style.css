@@ -1,0 +1,123 @@
+.demo,.newDemo {display: none;}
+div[contenteditable] {cursor: text;display: inline-block;vertical-align: top;}
+.yt-baseStyle .baseBlock .showItem {display: block;}
+/* theme default */
+.container{
+	font-size: 14px;
+	color: #666;
+	position: relative;
+}
+.wy-theme .top {
+	position: absolute;
+	top: 80px;
+	left: 0;
+	right: 0;
+	height: 80px;
+	background: #DFD8D0;
+	padding-left: 267.5px;
+	padding-top: 10px;
+	text-align: center;
+	color: #333;
+}
+.wy-theme .top .name {
+	font-size: 20px;
+}
+.wy-theme h1{
+	font-size: 18px;
+	font-weight: bolder;
+	color: #333
+}
+.wy-theme .left {
+	width: 267.5px;
+	background: #EFEFEF;
+	float: left;
+	padding-top: 208px;
+	padding-bottom: 50px;
+}
+.wy-theme .left .title h1{
+	height: 35px;
+	text-align: center;
+	line-height: 35px;
+	background: #fff;
+	margin-bottom: 15px;
+}
+.wy-theme .left .avatar {
+	width: 144px;
+	height: 144px;
+	border-radius: 72px;
+	background: #fff; 
+	z-index: 999;
+	position: absolute;
+	top: 44px;
+	left: 60px;
+}
+.wy-theme .left .avatar img{
+	width: 144px;
+	height: 144px;
+	border-radius: 72px;
+}
+.wy-theme .left section {
+	padding: 0 20px 20px 24px;
+}
+/*.wy-theme .left #base .item {
+	margin-bottom: 10px;
+}
+.wy-theme .left #base .item .iconfont {
+	font-size: 16px;
+	color: #333;
+	float: left;
+	margin-top: 3px;
+	margin-right: 15px;
+}*/
+.wy-theme .left #xqah .hobbyItem {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #999;
+  border-radius: 25px;
+  text-align: center;
+  line-height: 50px;
+  font-size: 10px;
+  float: left;
+  margin-right: 20px;
+  margin-top: 10px;
+}
+.wy-theme .left #wdjn .skill {
+	padding: 5px;
+	border: 1px solid #999;
+	border-radius: 10px;
+	display: inline-block;
+	margin-right: 10px;
+	margin-top: 5px;
+}
+.wy-theme .right {
+	width: 540px;
+	float: right;
+	position: relative;
+}
+.wy-theme .right .main {
+	padding-top: 176px;
+	padding-right: 20px;
+}
+.wy-theme .right .main section {
+	padding-bottom: 20px;
+	padding-left: 20px;
+}
+
+.wy-theme .right .main .title h1{
+	height: 35px;
+	text-align: center;
+	line-height: 35px;
+	background: #DFD8D0;
+}
+
+.wy-theme .right .main section .time {
+	color: #333;
+	font-weight: bolder;
+	margin-top: 10px;
+}
+.wy-theme .right .main .item-box .item {
+  float: left;
+  margin-right: 30px;
+  font-weight: bolder;
+  color: #333;
+}

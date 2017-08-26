@@ -1,0 +1,56 @@
+{
+    "blocks": [
+        {
+            "label": "基本信息",
+            "forid": "base",
+            "checked": true
+        },
+        {
+            "label": "获奖证书",
+            "forid": "jxry",
+            "checked": true
+        },
+        {
+            "label": "兴趣爱好",
+            "forid": "xqah",
+            "checked": true
+        },
+        {
+            "label": "我的技能",
+            "forid": "wdjn",
+            "checked": true
+        },
+        {
+            "label": "自我评价",
+            "forid": "zwpj",
+            "checked": true
+        },
+        {
+            "label": "教育背景",
+            "forid": "jybj",
+            "checked": true
+        },
+        {
+            "label": "实习经历",
+            "forid": "sxjl",
+            "checked": true
+        },
+        {
+            "label": "项目经验",
+            "forid": "xmjy",
+            "checked": true
+        },
+        {
+            "label": "培训经历",
+            "forid": "pxjl",
+            "checked": true
+        }
+
+    ],
+    "colors": [
+        {
+            "label": "default",
+            "value": "#DFD8D0"
+        }
+    ]
+}
