@@ -1,0 +1,285 @@
+.demo,.newDemo {display: none;}
+.yt-baseStyle .baseBlock .showItem {display: block;}
+.yt-baseStyle .newBlock .showItem {display: inline-block;}
+.yt-baseStyle .newBlock .showItem:hover {padding: 5px; cursor: move;}
+/* theme default */
+.container .left .avatar img {
+  display: block;
+  width: 140px;
+  height: 140px;
+}
+.default .container{
+  width: 100%;
+}
+.default .container .left,.default .container .right{
+  float: left;
+}
+/* 左边 */
+.default .container .left{
+  background: #F0F0F0;
+  width: 200px;
+  padding-top: 40px;
+}
+.default .container .left .avatar{
+  width: 140px;
+  height: 140px;
+  background: #364D73;
+  border-radius: 140px;
+  margin: 0 auto 30px;
+  overflow: hidden;
+  position: relative;
+}
+.default .container .left .avatar img {
+  width: 140px;
+  height: 140px;
+  border-radius: 140px;
+}
+.default .container .left .baseinfo{
+  height: 76px;
+  background: #364D73;
+  color: #fff;
+  text-align: center;
+}
+.default .container .left .baseinfo h1.name{
+  font-size: 24px;
+  line-height: 33px;
+  padding-top: 6px;
+}
+.default .container .left .baseinfo p.position{
+  font-size: 18px;
+  line-height: 25px;
+  padding-top: 1px;
+}
+.default .container .left .other-info{
+  color: #333;
+  font-size: 14px;
+  padding: 17px 13px 0;
+  line-height: 2;
+}
+.default .container .left .line {
+  border-top: 1px solid #999999;
+  width: 178px;
+  margin: 30px auto;
+}
+.default .container .left .honor{
+  padding: 20px 0;
+}
+.default .container .left .honor h1.title{
+  font-size: 18px;
+  color: #364D73;
+  text-align: center;
+}
+.default .container .left .honor div.desc{
+  font-size: 14px;
+  color: #333;
+  padding: 16px 15px 0;
+  line-height: 1.5
+}
+/* 右边 */
+.default .container .right{
+  background: #fff;
+  width: 600px;
+  padding-top: 40px;
+  padding-left: 40px;
+  padding-right: 20px;
+}
+.default .container .right .education,
+.default .container .right .skills,
+.default .container .right .self,
+.default .container .right .work{
+  margin-bottom: 36px;
+  padding-left: 20px;
+}
+.default .container .right .education .title,
+.default .container .right .skills .title,
+.default .container .right .self .title,
+.default .container .right .work .title{
+  font-size: 18px;
+  color: #364D73;
+}
+
+.default .container .right .education .item-box .item,
+.default .container .right .skills .item-box .item,
+.default .container .right .self .item-box .item,
+.default .container .right .work .item-box .item{
+  font-size: 16px;
+  line-height: 2;
+  color: #364D73;
+  float: left;
+  margin-right: 20px;
+  margin-top: 10px;
+}
+.default .container .right .education .desc,
+.default .container .right .skills .desc,
+.default .container .right .self .desc,
+.default .container .right .work .desc{
+  margin-top: 10px;
+  color: #666;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.default .container .right .baseBlock {
+  border-left: 2px solid #364D73;
+}
+.default .container .right .baseBlock .title:before{
+  content: '';
+  width: 14px;
+  height: 14px;
+  border-radius: 7px;
+  float: left;
+  position: absolute;
+  top: -1px;
+  left: -29px;
+  background-color: #364D73;
+}
+.default .container .right .baseBlock .item-box {
+  position: relative;
+}
+.default .container .right .baseBlock .item-box:before{
+  content: '';
+  width: 8px;
+  height: 8px;
+  border-radius: 8px;
+  float: left;
+  position: absolute;
+  top: 24px;
+  left: -25px;
+  background-color: #364D73;
+}
+
+/* theme green */
+.green .container{
+  width: 100%;
+}
+.green .container .left,.green .container .right{
+  float: left;
+}
+/* 左边 */
+.green .container .left{
+  background: #F0F0F0;
+  width: 200px;
+  padding-top: 40px;
+}
+.green .container .left .avatar{
+  width: 140px;
+  height: 140px;
+  background: #42b983;
+  border-radius: 140px;
+  margin: 0 auto 30px;
+  overflow: hidden;
+  position: relative;
+}
+.green .container .left .baseinfo{
+  height: 76px;
+  background: #42b983;
+  color: #fff;
+  text-align: center;
+}
+.green .container .left .baseinfo h1.name{
+  font-size: 24px;
+  line-height: 33px;
+  padding-top: 6px;
+}
+.green .container .left .baseinfo p.position{
+  font-size: 18px;
+  line-height: 25px;
+  padding-top: 1px;
+}
+.green .container .left .other-info{
+  color: #333;
+  font-size: 14px;
+  padding: 17px 13px 0;
+  line-height: 2;
+}
+.green .container .left .line {
+  border-top: 1px solid #999999;
+  width: 178px;
+  margin: 30px auto;
+}
+.green .container .left .honor{
+  padding: 20px 0;
+}
+.green .container .left .honor h1.title{
+  font-size: 18px;
+  color: #42b983;
+  text-align: center;
+}
+.green .container .left .honor div.desc{
+  font-size: 14px;
+  color: #333;
+  padding: 16px 15px 0;
+  line-height: 1.5
+}
+/* 右边 */
+.green .container .right{
+  background: #fff;
+  width: 600px;
+  padding-top: 40px;
+  padding-left: 40px;
+  padding-right: 20px;
+}
+.green .container .right .education,
+.green .container .right .skills,
+.green .container .right .self,
+.green .container .right .work{
+  margin-bottom: 36px;
+  padding-left: 20px;
+}
+.green .container .right .education .title,
+.green .container .right .skills .title,
+.green .container .right .self .title,
+.green .container .right .work .title{
+  font-size: 18px;
+  color: #42b983;
+}
+.green .container .right .education .item-box .item,
+.green .container .right .skills .item-box .item,
+.green .container .right .self .item-box .item,
+.green .container .right .work .item-box .item{
+  font-size: 16px;
+  line-height: 2;
+  color: #42b983;
+  float: left;
+  margin-right: 20px;
+  margin-top: 10px;
+}
+.green .container .right .education .desc,
+.green .container .right .skills .desc,
+.green .container .right .self .desc,
+.green .container .right .work .desc{
+  margin-top: 10px;
+  color: #666;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+
+.green .container .right .baseBlock {
+  border-left: 2px solid #42b983;
+}
+.green .container .right .baseBlock .title:before{
+  content: '';
+  width: 14px;
+  height: 14px;
+  border-radius: 7px;
+  float: left;
+  position: absolute;
+  top: -1px;
+  left: -29px;
+  background-color: #42b983;
+}
+.green .container .right .baseBlock .item-box {
+  position: relative;
+}
+.green .container .right .baseBlock .item-box:before{
+  content: '';
+  width: 8px;
+  height: 8px;
+  border-radius: 8px;
+  float: left;
+  position: absolute;
+  top: 24px;
+  left: -25px;
+  background-color: #42b983;
+}

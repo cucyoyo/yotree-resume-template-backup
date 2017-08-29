@@ -1,0 +1,94 @@
+.demo,.newDemo {display: none;}
+/*div[contenteditable] {cursor: text;display: inline-block;vertical-align: top;}*/
+div[contenteditable] {cursor: text;vertical-align: top;}
+.yt-baseStyle .baseBlock .showItem {display: block;}
+.yt-baseStyle .newBlock .showItem {display: inline-block;}
+.yt-baseStyle .newBlock .showItem:hover {padding: 5px; cursor: move;}
+/* theme default */
+.default .container{
+  position: relative;
+  padding: 30px 50px 0 20px;
+}
+.default .container .avatar{
+  background: #F8E71C;
+  width: 150px;
+  height: 150px;
+  border-radius: 214px;
+  overflow: hidden;
+  position: absolute;
+  right: 50px;
+  top: 50px;
+}
+.default .container .avatar img{
+  width: 150px;
+  height: 150px;
+  border-radius: 75px;
+}
+.default .container .main {
+  color: #333;
+  border-left: 10px solid #F8E71C;
+  padding-left: 15px;
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+.default .container .main .baseBlock {
+  margin-bottom: 20px;
+}
+.default .container .main .baseBlock .title {
+  height: 30px;
+  line-height: 28px;
+  background-color: #F8E71C;
+  border-right: 5px solid #F8E71C;
+  color: #fff;
+  display: inline-block;
+  padding: 0 24px 0 8px;
+  font-size: 16px;
+  position: relative;
+  margin-bottom: 17px;
+}
+.default .container .main .baseBlock .title .circleIcon {
+  display: block;
+  width: 16px;
+  height: 30px;
+  background-color: #F8E71C;
+  border-left: 5px solid #fff;
+  border-right: 5px solid #fff;
+  margin-top: -1px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.default .container .main .baseinfo {
+  width: 600px;
+}
+.default .container .main .baseinfo .baseItem {
+  float: left;
+  margin-bottom: 10px;
+  margin-right: 50px;
+  font-size: 14px;
+}
+.default .container .main .baseBlock .item {
+  display: inline-block;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #666;
+}
+.default .container .main .baseBlock .desc {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #666;
+}
+.default .container .main .hobby .hobbyItem {
+  width: 55px;
+  height: 55px;
+  line-height: 55px;
+  border: 1px solid #999999;
+  border-radius: 55px;
+  text-align: center;
+  font-size: 14px;
+  float: left;
+  margin-right: 21px;
+  margin-top: 22px;
+  overflow: hidden;
+}

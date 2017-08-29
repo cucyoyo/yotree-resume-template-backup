@@ -1,0 +1,147 @@
+.demo,.newDemo {display: none;}
+div[contenteditable] {cursor: text;display: vertical-align: top;}
+.yt-baseStyle .baseBlock .showItem {display: block;}
+/*.yt-baseStyle .newBlock .showItem {display: inline-block;}*/
+.yt-baseStyle .newBlock .showItem:hover {padding: 5px; cursor: move;}
+/* theme default */
+.default {
+  padding-top: 30px;
+}
+.default .container{
+  position: relative;
+}
+.default .container header {
+  margin-top: 108px;
+  margin: 0 38px;
+}
+.default .container header .avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 150px;
+  overflow: hidden;
+  background: #8AD82A;
+  position: absolute;
+  right: 38px;
+  top: 0px;
+  z-index: 10;
+  cursor: pointer;
+}
+.default .container header .avatar img{
+  width: 150px;
+  height: 150px;
+  border-radius: 150px;
+}
+.default .container header .blockLine {
+  width: 30px;
+  height: 206px;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  background: #8AD82A;
+  float: left;
+  position: relative;
+}
+.default .container  .blockBreak {
+  width: 30px;
+  height: 7px;
+  background: #fff;
+  z-index: 100;
+  position: absolute;
+  left: 0;
+  top:184px;
+}
+.default .container .blockRight {
+  width: 20px;
+  background-color: #8AD82A;
+  border-radius: 5px;
+  position: absolute;
+  top: 200px;
+  bottom: 30%;
+  right: 0;
+}
+.default .container .blockRight-btm {
+  width: 20px;
+  background-color: #8AD82A;
+  border-radius: 5px;
+  position: absolute;
+  top: 80%;
+  bottom: 10%;
+  right: 0;
+}
+.default .container header .baseinfo {
+  float: left;
+  padding-left: 30px;
+  padding-top: 30px;
+  width: 450px;
+}
+.default .container header .baseinfo .name {
+  font-size: 20px;
+}
+.default .container header .baseinfo .position {
+  font-size: 14px;
+  margin-top: 10px;
+  color: #666;
+}
+.default .container header span {
+  font-size: 14px;
+  margin-top: 5px;
+  display: inline-block;
+  color: #666;
+}
+.default .container .main {
+  margin-left: 38px;
+  margin-right: 38px;
+}
+.default .container .baseBlock {
+  border-bottom: 1px dashed #979797;
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
+.default .container .baseBlock .title {
+  font-size: 18px;
+  color: #333;
+  padding-bottom: 5px;
+  margin-right: 40px;
+  display: inline-block;
+}
+.default .container .baseBlock .title div{
+  display: inline-block;
+}
+.default .container .baseBlock .item-box {
+  display: inline-block;
+  padding-bottom: 5px;
+}
+.default .container .baseBlock .title .circleIcon {
+  width: 15px;
+  height: 15px;
+  background: #8AD82A;
+  margin-right: 10px;
+  display: inline-block;
+  border-radius: 20px;
+  vertical-align: middle;
+}
+.default .container .baseBlock .item {
+  display: inline-block;
+  font-size: 14px;
+  color: #333;
+  margin-top: 5px;
+}
+.default .container .baseBlock .desc {
+  color: #666;
+  font-size: 14px;
+  line-height: 1.5;
+  margin-top: 10px;
+  padding-left: 155px;
+}
+.default .container .main .hobby .hobbyItem {
+  width: 55px;
+  height: 55px;
+  line-height: 55px;
+  border: 1px solid #999999;
+  border-radius: 55px;
+  text-align: center;
+  font-size: 14px;
+  float: left;
+  margin-right: 21px;
+  margin-top: 10px;
+  overflow: hidden;
+}

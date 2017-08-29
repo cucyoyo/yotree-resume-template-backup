@@ -1,9 +1,0 @@
-.demo,.newDemo {display: none;}
-div[contenteditable] {cursor: text;display: inline-block;vertical-align: top;}
-.yt-baseStyle .baseBlock .showItem {display: block;}
-/* theme default */
-.default .container{
-  position: relative;
-  font-size: 14px;
-  color: #666;
-}

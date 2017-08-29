@@ -1,0 +1,90 @@
+.demo,.newDemo {display: none;}
+.yt-baseStyle .baseBlock .showItem {display: block;}
+.yt-baseStyle .newBlock .showItem {display: inline-block;}
+.yt-baseStyle .newBlock .showItem:hover {padding: 5px; cursor: move;}
+/* theme default */
+.default .container{
+  width: 820px;
+  position: relative;
+  font-size: 14px;
+  color: #666;
+}
+.default .container .avatar {
+  width: 130px;
+  height: 170px;
+  background: #F2F2F4;
+  border-radius: 8px;
+  position: absolute;
+  top: 25px;
+  left: 51px;
+  overflow: hidden;
+}
+.default .container .avatar #file {
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.default .container .avatar img {
+  width: 130px;
+  height: 170px;
+  border-radius: 8px;
+}
+.default .container .main{
+  margin-left: 243px;
+  padding-left: 59px;
+  padding-right: 59px;
+  padding-bottom: 40px;
+  border-left: 1px solid #DF2065;
+  background-color: #F9F9F9;
+}
+.default .container .main .baseBlock{
+  padding-top: 39px;
+}
+.default .container .main .baseinfo {
+  width: 500px;
+}
+.default .container .main .baseinfo .item {
+  float: left;
+  width: 50%;
+  color: #666;
+  font-size: 14px;
+  padding: 10px 0 0;
+}
+.default .container .main .baseBlock .title {
+  font-size: 18px;
+  color: #DF2065;
+  float: left;
+  /*display: inline-block;*/
+  margin-left: -200px;
+  position: relative;
+  width: 120px;
+}
+.default .container .main .baseBlock .title .circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: #fff;
+  display: inline-block;
+  position: absolute;
+  right: -40px;
+  top: -5px;
+}
+.default .container .main .baseBlock .item-box {
+  /*display: inline-block;*/
+  /*margin-left: 118px;*/
+}
+.default .container .main .baseBlock .item-box .item {
+  float: left;
+  font-size: 14px;
+  color: #666;
+  line-height: 1.5;
+  margin-right: 20px;
+}
+.default .container .main .baseBlock .desc {
+  font-size: 14px;
+  color: #666;
+  line-height: 30px;
+}

@@ -1,0 +1,136 @@
+.demo,.newDemo {display: none;}
+div[contenteditable] {cursor: text; display: vertical-align: top;}
+.yt-baseStyle .baseBlock .showItem {display: block;}
+/*.yt-baseStyle .newBlock .showItem {display: inline-block;}*/
+.yt-baseStyle .newBlock .showItem:hover {padding: 5px; cursor: move;}
+/* theme default */
+.default .container{
+  position: relative;
+  padding-top: 50px;
+}
+.default .container .line {
+  position: absolute;
+  width: 570px;
+  height: 29px;
+  background: #59789B;
+  border-radius: 66px;
+  position: absolute;
+  right: 19px;
+  top: 2px;
+}
+
+.default .container .block{
+  width: 400px;
+  height: 20px;
+  border-radius: 10px;
+  background-color: #59789B;
+  position: absolute;
+  right: 0;
+  top: 50px;
+}
+  
+.default .container header .left {
+  float: left;
+  width: 264px;
+  height: 142px;
+  background: #59789B;
+  border-top-right-radius: 66px;
+  border-bottom-right-radius: 66px;
+  position: relative;
+}
+.default .container header .left .avatar {
+  width: 124px;
+  height: 124px;
+  border-radius: 124px;
+  background-color: #fff;
+  overflow: hidden;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
+}
+.default .container header .left .avatar img {
+  width: 124px;
+  height: 124px;
+  border-radius: 124px;
+}
+.default .container header .right {
+  float: left;
+  margin-top: 30px;
+  margin-left: 20px;
+}
+.default .container header .right .name {
+  color: #333;
+  font-size: 18px;
+}
+.default .container header .right .position {
+  color: #333;
+  font-size: 14px;
+}
+.default .container header .right div[contenteditable]{
+  display: inline-block;
+}
+.default .container header .right .phone,
+.default .container header .right .email {
+  color: #333;
+  font-size: 14px;
+  margin-right: 20px;
+}
+.default .container .main {
+  margin-left: 32px;
+}
+.default .container .baseBlock {
+  margin-top: 30px;
+  margin-left: 47px;
+}
+.default .container .baseBlock .title {
+  font-size: 18px;
+  color: #59789B;
+  margin-left: -32px;
+  position: relative;
+}
+.default .container .baseBlock .title:after{
+  content: '';
+  border: 1px solid #59789B;
+  position: absolute;
+  left: 120px;
+  right: 40px;
+  top: 10px;
+}
+.default .container .baseBlock .title div{
+  display: inline-block;
+}
+.default .container .baseBlock .title .circleIcon {
+  width: 15px;
+  height: 15px;
+  background-color: #59789B;
+  margin-right: 9px;
+  display: inline-block;
+  border-radius: 15px;
+  vertical-align: middle;
+}
+.default .container .baseBlock .item {
+  display: inline-block;
+  font-size: 14px;
+  color: #333;
+  margin-top: 10px;
+}
+.default .container .baseBlock .desc {
+  color: #333;
+  font-size: 14px;
+  line-height: 1.5;
+  margin-top: 10px;
+}
+.default .container .main .hobby .hobbyItem {
+  width: 55px;
+  height: 55px;
+  line-height: 55px;
+  border: 1px solid #999999;
+  border-radius: 55px;
+  text-align: center;
+  font-size: 14px;
+  float: left;
+  margin-right: 21px;
+  margin-top: 10px;
+  overflow: hidden;
+}

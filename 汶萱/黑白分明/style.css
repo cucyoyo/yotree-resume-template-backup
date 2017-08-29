@@ -1,0 +1,199 @@
+.demo,.newDemo {display: none;}
+.yt-baseStyle .baseBlock .showItem {display: block;}
+.yt-baseStyle .newBlock .showItem {display: inline-block;}
+.yt-baseStyle .newBlock .showItem:hover {padding: 5px; cursor: move;}
+/* theme default */
+.default .container{
+  padding: 50px 78px;
+  position: relative;
+}
+.default .container .tran1 {
+  width: 0;
+  height: 0;
+  border-top: 80px solid #e6e8eb;
+  border-right: 80px solid transparent;
+  position: absolute;
+  left: 78px;
+  top: 50px;
+}
+.default .container .tran2 {
+  width: 0;
+  height: 0;
+  border-top: 80px solid #e6e8eb;
+  border-left: 80px solid transparent;
+  position: absolute;
+  right: 78px;
+  top: 50px;
+}
+.default .container .tran3 {
+  width: 0;
+  height: 0;
+  border-bottom: 80px solid #e6e8eb;
+  border-right: 80px solid transparent;
+  position: absolute;
+  left: 78px;
+  bottom: 30px;
+}
+.default .container .tran4 {
+  width: 0;
+  height: 0;
+  border-bottom: 80px solid #e6e8eb;
+  border-left: 80px solid transparent;
+  position: absolute;
+  right: 78px;
+  bottom: 30px;
+}
+.default .container .avatar {
+  width: 168px;
+  height: 168px;
+  overflow: hidden;
+  margin: 0 auto;
+  position: relative;
+  background-color: #e6e8eb;
+}
+.default .container .avatar img {
+  width: 100%;
+}
+.default .container .base {
+  text-align: center;
+  color: #333333;
+}
+.default .container .base .name {
+  font-size: 20px;
+  margin-top: 10px;
+}
+.default .container .base .position {
+  font-size: 16px;
+  margin-bottom: 16px;
+}
+.default .container .line {
+  border-top: 1px solid #666;
+}
+.default .container .self {
+  padding: 27px 10px;
+  font-size: 14px;
+  color: #666;
+}
+.default .container .main {
+  margin-top: 34px;
+  margin-bottom: 37px;
+}
+.default .container .main .left,
+.default .container .main .right {
+  float: left;
+  width: 48%;
+}
+.default .container .main .left .baseinfo {
+}
+.default .container .main .left .title {
+  font-size: 18px;
+  color: #333333;
+  padding-right: 25px;
+  position: relative;
+  text-align: right;
+}
+.default .container .main .left .title .circle {
+  display: block;
+  width: 10px;
+  height: 10px;
+  background: #333333;
+  border-radius: 10px;
+  position: absolute;
+  right: 0;
+  top: 6px;
+}
+.default .container .main .left .baseinfo .item {
+  font-size: 14px;
+  color: #666;
+  text-align: right;
+}
+.default .container .main .left .baseinfo .item span{
+  width: 55px;
+  padding-left: 10px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.default .container .main .left .honor {
+  margin-top: 45px;
+}
+.default .container .main .left .honor .desc {
+  text-align: right;
+  font-size: 14px;
+  color: #666;
+  line-height: 33px;
+  margin-top: 17px;
+}
+.default .container .main .right {
+  margin-left: 3%;
+}
+.default .container .main .right .education,
+.default .container .main .right .work {
+  margin-bottom: 17px;
+}
+.default .container .main .right .title{
+  font-size: 18px;
+  color: #333333;
+  position: relative;
+  padding-left: 25px;
+}
+.default .container .main .right .title .circle {
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  display: inline-block;
+  background-color: #333;
+  position: absolute;
+  left: 0;
+  top: 6px;
+}
+.default .container .main .right .time,
+.default .container .main .right .item {
+  font-size: 14px;
+  color: #333;
+  margin-top: 0;
+}
+.default .container .main .right .item {
+  display: inline-block;
+}
+.default .container .main .right .desc {
+  font-size: 14px;
+  color: #666666;
+  line-height: 1.5;
+  margin-top: 10px;
+}
+.default .container .hobby {
+  text-align: center;
+  width: 80%;
+  margin: auto;
+}
+.default .container .hobby .title {
+  font-size: 18px;
+  color: #333333;
+  position: relative;
+  padding-left: 20px;
+  display: block;
+  width: 130px;
+  margin: 20px auto;
+}
+.default .container .hobby .title .circle {
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  display: inline-block;
+  background-color: #333;
+  position: absolute;
+  left: 0;
+  top: 5px;
+}
+.default .container .hobby .item {
+  border: 1px solid #666;
+  width: 55px;
+  height: 55px;
+  border-radius: 55px;
+  float: left;
+  text-align: center;
+  line-height: 55px;
+  margin: 10px 10px 0;
+  font-size: 14px;
+  color: #666;
+}

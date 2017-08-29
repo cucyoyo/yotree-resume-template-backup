@@ -1,0 +1,188 @@
+.demo,.newDemo {display: none;}
+.yt-baseStyle .baseBlock .showItem {display: block;}
+.yt-baseStyle .newBlock .showItem {display: inline-block;}
+.yt-baseStyle .newBlock .showItem:hover {padding: 5px; cursor: move;}
+/* theme default */
+.default .container{
+  width: 100%;
+  background: url("https://api.yo-tree.com/images/top-bg.png") no-repeat top left;
+  background-size: 1100px 37px;
+  padding-top: 37px;
+  padding-right: 70px;
+  font-size: 14px;
+  color: #666;
+  position: relative;
+}
+.default .container .top {
+  height: 25px;
+  background-color: #6CCFE6;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 30px;
+  z-index: 2;
+}
+.default .container .top-mid {
+  height: 45px;
+  width: 10px;
+  background-color: #fff;
+  position: absolute;
+  left: 300px;
+  top: 20px;
+  z-index: 3;
+  transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+}
+/*标题前面的样式*/
+.default .container section .title {
+  position: relative;
+}
+.default .container section .t-block .block-big {
+  height: 25px;
+  width: 70px;
+  background-color: #6CCFE6;
+  position: absolute;
+  left: 0;
+  top: 0px;
+  z-index: 2;
+}
+/*.default .container section .t-block {
+  position: relative;
+}*/
+.default .container section .t-block .block-small1 {
+  height: 35px;
+  width: 5px;
+  background-color: #fff;
+  position: absolute;
+  left: 35px;
+  top: -5px;
+  z-index: 3;
+  transform: rotate(-30deg);
+  -ms-transform: rotate(-30deg);
+  -moz-transform: rotate(-30deg);
+  -webkit-transform: rotate(-30deg);
+  -o-transform: rotate(-30deg);
+}
+.default .container section .t-block .block-small2 {
+  height: 35px;
+  width: 5px;
+  background-color: #fff;
+  position: absolute;
+  left: 49px;
+  top: -5px;
+  z-index: 3;
+  transform: rotate(-30deg);
+  -ms-transform: rotate(-30deg);
+  -moz-transform: rotate(-30deg);
+  -webkit-transform: rotate(-30deg);
+  -o-transform: rotate(-30deg);
+}
+.default .container section .t-block .block-small3 {
+  width: 0;
+  height: 0;
+  border-top: 25px solid #fff;
+  border-left: 13px solid transparent;
+  position: absolute;
+  left: 57px;
+  top: 0px;
+  z-index: 3;
+}
+.default .container .main {
+  border-left: 1px solid #cecece;
+  padding-top: 34px;
+  margin-left: 59px;
+}
+.default .container section {
+  margin-bottom: 34px;
+  margin-left: 67px;
+  padding-left: 0px;
+}
+.default .container section .title{
+  font-size: 18px;
+  color: #6CCFE6;
+  padding-left: 85px;
+  background: url("https://api.yo-tree.com/images/title-bg.png") no-repeat center left;
+  background-size: 87px 24px;
+  margin-left: -85px;
+}
+.default .container section .title small{
+  font-size: 14px;
+  color: #999999;
+}
+.default .container .main {
+  position: relative;
+}
+.default .container .main .avatar {
+  position: absolute;
+  right: 0;
+  top: 37px;
+  width: 130px;
+  height: 170px;
+  background-color: #ccc;
+  z-index: 2
+}
+.default .container .main .avatar #file{
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.default .container .main .avatar img{
+  width: 130px;
+  height: 170px;
+}
+.default .container section.baseinfo{
+  width: 550px;
+}
+.default .container section.baseinfo .item{
+  width: 216px;
+  float: left;
+  margin-top: 10px;
+  font-size: 14px;
+  color: #666;
+}
+.default .container .item-box {
+  margin-top: 20px;
+}
+.default .container .item-box .item{
+  font-size: 14px;
+  color: #666666;
+  margin-right: 10px;
+  vertical-align: top;
+  display: inline-block;
+}
+.default .container .desc {
+  font-size: 14px;
+  color: #666666;
+  line-height: 31px;
+  margin-top: 21px;
+}
+.default .container .honors,
+.default .container .hobby {
+  float: left;
+}
+.default .container .honors{
+  margin-right: 112px;
+}
+.default .container .hobby {
+  width: 310px;
+}
+.default .container .hobby .hobbyItem {
+  border: 1px solid #6CCFE6;
+  width: 60px;
+  height: 60px;
+  border-radius: 60px;
+  float: left;
+  text-align: center;
+  line-height: 58px;
+  margin-right: 10px;
+  margin-top: 10px;
+  font-size: 14px;
+  color: #666;
+}

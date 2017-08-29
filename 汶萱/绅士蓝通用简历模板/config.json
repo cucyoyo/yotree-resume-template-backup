@@ -1,0 +1,44 @@
+{
+    "blocks": [
+        {
+            "label": "基本资料",
+            "forid": "base",
+            "checked": true
+        },
+        {
+            "label": "荣誉奖励",
+            "forid": "ryjl",
+            "checked": true
+        },
+        {
+            "label": "教育背景",
+            "forid": "jybj",
+            "checked": true
+        },
+        {
+            "label": "工作经历",
+            "forid": "gzjl",
+            "checked": true
+        },
+        {
+            "label": "专业技能",
+            "forid": "zyjn",
+            "checked": true
+        },
+        {
+            "label": "自我评价",
+            "forid": "zwpj",
+            "checked": true
+        }
+    ],
+    "colors": [
+        {
+            "label": "default",
+            "value": "#364D73"
+        },
+        {
+            "label": "green",
+            "value": "#42b983"
+        }
+    ]
+}

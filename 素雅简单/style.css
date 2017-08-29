@@ -1,0 +1,124 @@
+.demo,.newDemo {display: none;}
+div[contenteditable] {cursor: text;display:vertical-align: top;}
+.yt-baseStyle .baseBlock .showItem {display: block;}
+/* theme default */
+.wy-theme .tra-box{
+  width: 124px;
+  margin-bottom: 45px;
+}
+.wy-theme .trangle{
+  width: 15px;
+  height: 15px;
+  margin: -26px auto;
+  background: #fff;
+  border-left: 1px #979797 solid; 
+  border-bottom: 1px #979797 solid; 
+  transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg); /* IE 9 */
+  -webkit-transform: rotate(-45deg); /* Safari and Chrome */
+}
+.default .container{
+  position: relative;
+  font-size: 14px;
+  color: #333333;
+  padding-top: 50px;
+}
+.wy-theme .font-title1{
+  font-size: 18px;
+  font-weight: bolder;
+}
+.wy-theme .font-title2{
+  font-size: 14px;
+  font-weight: bolder;
+}
+.wy-theme .main{
+  position: relative;
+}
+.wy-theme .main #base {
+  margin: 0 30px 22px;
+}
+.wy-theme .main #base .header-box{
+  float: left;
+  text-align: center;
+  margin-right: 60px;
+  margin-top: -20px;
+}
+/*.wy-theme .main #base .right{
+  padding-top: 20px;
+}*/
+.wy-theme .main #base .header-box .avatar{
+  width: 120px;
+  height: 120px;
+  background: #D8D8D8;
+  border: 1px solid #979797;
+  border-radius: 60px;
+  margin: 0 auto 6px;
+}
+.wy-theme .main #base .header-box .avatar img {
+  width: 120px;
+  height: 120px;
+  border: 1px solid #979797;
+  border-radius: 60px;
+}
+.wy-theme .main #base .item{
+  float: left;
+  width: 35%;
+}
+.wy-theme .main section{
+  /*margin-top: 10px;*/
+  border-top: 1px solid #979797;
+  padding: 15px 0 25px;
+}
+.wy-theme .main .content{
+  margin-left: 124px;
+}
+.wy-theme .main section h1 div{
+  float: left;
+  width: 124px;
+  text-align: center;
+  font-size: 18px;
+  margin-top: 6px;
+  font-weight: bolder;
+  color: #93DB3A;
+}
+.wy-theme .main #jybj .item-box .item,.main #sxjl .item-box .item,.main #xmjy .item-box .item{
+  float: left;
+  margin-right: 30px;
+  text-align: left;
+  font-size: 14px;
+  color: #333333;
+  line-height: 30px;
+  font-weight: bolder;
+}
+.wy-theme .main #jxry .jx{
+  float: left;
+  width: 30%;
+  margin-right: 15px;
+}
+.wy-theme .main #xqah .hobbyItem {
+  float: left;
+  width: 50px;
+  height: 50px;
+  border: 1px solid #999999;
+  margin: 20px 40px 0 10px;
+  text-align: center;
+  line-height: 70px;
+  font-size: 10px;
+  transform: rotate(45deg);
+  -ms-transform: rotate(45deg); /* IE 9 */
+  -webkit-transform: rotate(45deg); /* Safari and Chrome */
+}
+.wy-theme .main #xqah .hobbyItem div{
+  margin-top: -10px;
+  margin-left: 5px;
+  transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg); /* IE 9 */
+  -webkit-transform: rotate(-45deg); /* Safari and Chrome */
+
+}
+.wy-theme .main #xqah .delItem {
+    transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg); /* IE 9 */
+    -webkit-transform: rotate(-45deg); /* Safari and Chrome */
+
+}

@@ -1,0 +1,89 @@
+.demo,.newDemo {display: none;}
+.yt-baseStyle .baseBlock .showItem {display: block;}
+/*.yt-baseStyle .newBlock .showItem {display: inline-block;}*/
+.yt-baseStyle .newBlock .showItem:hover {padding: 5px; cursor: move;}
+/* theme default */
+.default .container{
+  position: relative;
+}
+div[contenteditable] {
+  cursor: text;
+}
+.default .container header {
+  background: #9DC3E6;
+  height: 200px;
+  padding: 30px 70px;
+}
+.default .container header .self {
+  width: 500px;
+  float: left;
+  color: #333;
+}
+.default .container header .self h1.title {
+  font-size: 18px;
+}
+.default .container header .self .desc {
+  font-size: 14px;
+  margin-top: 5px;
+}
+.default .container header .avatar {
+  width: 109px;
+  height: 145px;
+  background-color: #fff;
+  float: right;
+  cursor: pointer;
+}
+.default .container header .avatar img{
+  width: 109px;
+  height: 145px;
+}
+.default .container .main {
+  padding: 23px 70px;
+}
+.default .container .main .baseBlock {
+  margin-top: 20px;
+}
+.default .container .main .baseBlock .title {
+  font-size: 18px;
+  color: #3595EE;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #979797;
+}
+.default .container .main .baseBlock .item-box {
+  margin-top: 12px;
+}
+.default .container .main .baseBlock .item-box .item {
+  display: inline-block;
+  font-size: 14px;
+  color: #333333;
+  margin-right: 20px;
+}
+.default .container .main .baseBlock .desc {
+  margin-top: 9px;
+  font-size: 14px;
+  color: #666;
+  line-height: 1.5;
+}
+.default .container .main .baseinfo {
+  padding-top: 13px;
+}
+.default .container .main .baseinfo .baseItem {
+  float: left;
+  font-size: 14px;
+  width: 50%;
+  color: #666;
+  margin-top: 5px;
+}
+.default .container .main .hobby .hobbyItem {
+  width: 55px;
+  height: 55px;
+  line-height: 55px;
+  border: 1px solid #999999;
+  border-radius: 55px;
+  text-align: center;
+  font-size: 14px;
+  float: left;
+  margin-right: 21px;
+  margin-top: 22px;
+  overflow: hidden;
+}

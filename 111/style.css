@@ -1,5 +1,5 @@
 .demo,.newDemo {display: none;}
-div[contenteditable] {cursor: text;display: inline-block;vertical-align: top;}
+div[contenteditable] {cursor: text;vertical-align: top;}
 .yt-baseStyle .baseBlock .showItem {display: block;}
 /* theme default */
 .wy-theme  .container{

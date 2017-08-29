@@ -1,0 +1,122 @@
+.demo,.newDemo {display: none;}
+div[contenteditable] {cursor: text;vertical-align: top;}
+.yt-baseStyle .baseBlock .showItem {display: block;}
+/* theme default */
+.container {
+  position: relative;
+  font-size: 14px;
+  color: #666;
+  padding: 35px;
+}
+.wy-theme .square {
+  width: 12px;
+  height: 12px;
+  background-color: #108676;
+  border-radius: 4px;
+  position: absolute;
+  top: 5px;
+}
+.wy-theme .circle {
+  width: 16px;
+  height: 16px;
+  background: #108676;
+  border-radius: 8px;
+  position: absolute;
+  top: 6px;
+}
+.wy-theme .line {
+    display: inline-block;
+    height: 3px;
+    background: #108676;
+    margin: auto 0;
+    position: absolute;
+    top:0;
+    bottom:0;
+    left: 110px;
+    right: 0px;
+}
+.wy-theme .desc {
+  line-height: 35px;
+}
+.wy-theme header {
+  position: relative;
+  width: 100%;
+}
+.wy-theme  header .avatar {
+  width: 135px;
+  height: 156px;
+  background-color: #108676;
+  border: 1px solid #108676;
+  border-radius: 3px;
+  float: left;
+}
+.wy-theme header .avatar img{
+  width: 135px;
+  height: 156px;
+}
+.wy-theme header .position {
+  margin-left: 10px;
+  font-size: 15px;
+  display: inline-block;
+}
+.wy-theme  header .baseBlock {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 70%;
+  border-bottom: 0.1px solid #666;
+}
+.wy-theme header .baseBlock  .name{
+  border-bottom: 1px solid #666;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px;
+  color: #108676;
+  width: 100%;
+  text-align: right;
+}
+.wy-theme header .baseBlock span {
+  width: 45%;
+  margin-right: 25px;
+  float: left;
+  font-size: 14px;
+  position: relative;
+}
+.wy-theme header .baseBlock span div:nth-child(2){
+  margin-left: 16px;
+}
+.wy-theme .main section{
+  margin-top: 20px;
+}
+.wy-theme .main h1 {
+  position: relative;
+  font-size: 18px;
+  color: #108676;
+  font-weight: bolder;
+}
+.wy-theme .title div:nth-child(2){
+  margin-left: 22px;
+}
+.wy-theme .main section{
+  padding: 10px 0 0 20px;
+  border-left: #108676 3px solid;
+  margin: 50px 0 0 10px ;
+}
+.wy-theme .top {
+  margin-left: -28px;
+  margin-top: -40px;
+}
+.wy-theme .main .item-box .item {
+  float: left;
+  font-size: 14px;
+  color: #108676;
+  margin: 10px 20px 5px 0 ;
+  text-align: left;
+}
+.wy-theme #xqah .hobbyItem{
+  border: 2px solid #108676;
+  border-radius: 6px;
+  display: inline-block;
+  margin: 10px 10px 0 0;
+  padding: 5px;
+}

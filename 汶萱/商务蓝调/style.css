@@ -1,0 +1,112 @@
+.demo,.newDemo {display: none;}
+div[contenteditable] {cursor: text;display:vertical-align: top;}
+.yt-baseStyle .baseBlock .showItem {display: block;}
+.yt-baseStyle .newBlock .showItem {display: inline-block;}
+.yt-baseStyle .newBlock .title {display: block;}
+.yt-baseStyle .newBlock .showItem:hover {padding: 5px; cursor: move;}
+/* theme default */
+.default .container{
+  position: relative;
+}
+.default .container header {
+  /*margin: 50px 38px;*/
+  padding: 50px 38px;
+}
+.default .container header .avatar {
+  width: 130px;
+  height: 130px;
+  border-radius: 130px;
+  overflow: hidden;
+  background: #3389CE;
+  z-index: 10;
+  cursor: pointer;
+  float: left;
+}
+.default .container header .baseBlock {
+  float: left;
+  width: 600px;
+}
+.default .container header .baseinfo {
+  padding-left: 15px;
+  width: 600px;
+}
+.default .container header .baseinfo .name {
+  font-size: 18px;
+}
+.default .container header .baseinfo .position {
+  font-size: 14px;
+  margin-top: 10px;
+}
+.default .container header span {
+  font-size: 14px;
+  margin-top: 5px;
+  display: inline-block;
+  margin-right: 50px;
+  color: #666;
+}
+.default .container .main {
+  margin-left: 73px;
+  margin-right: 73px;
+}
+.default .container .baseBlock {
+  padding-bottom: 30px;
+}
+.default .container .baseBlock .title {
+  font-size: 16px;
+  color: #333;
+  padding-bottom: 5px;
+  margin-right: 20px;
+  text-align: center;
+}
+.default .container .baseBlock .title div[contenteditable]{
+  display: inline-block;
+  background: #3289CE;
+  border-radius: 4px;
+  color: #fff;
+  padding: 5px 8px;
+}
+.default .container .baseBlock .item-box {
+  display: inline-block;
+  padding-bottom: 5px;
+}
+.default .container .baseBlock .item-box .circle{
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  background: #3389CE;
+  border-radius: 15px;
+  margin-right: 5px;
+  margin-left: -25px;
+}
+.default .container .baseBlock .item {
+  display: inline-block;
+  font-size: 14px;
+  color: #333;
+  margin-top: 5px;
+}
+.default .container .baseBlock .desc {
+  color: #666;
+  font-size: 14px;
+  line-height: 1.5;
+  margin-top: 10px;
+}
+.default .container .main .hobby .hobbyItem {
+  width: 55px;
+  height: 55px;
+  line-height: 55px;
+  border: 1px solid #999999;
+  border-radius: 55px;
+  text-align: center;
+  font-size: 14px;
+  margin-right: 21px;
+  margin-top: 10px;
+  overflow: hidden;
+  display: inline-block;
+}
+.default .container .main .hobby {
+  text-align: center;
+}
+.default .container .main .honors .desc {
+  display: block;
+  text-align: center;
+}

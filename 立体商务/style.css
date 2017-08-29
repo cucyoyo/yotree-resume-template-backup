@@ -1,0 +1,106 @@
+.demo,.newDemo {display: none;}
+div[contenteditable] {cursor: text;vertical-align: top;}
+.yt-baseStyle .baseBlock .showItem {display: block;}
+/* theme default */
+.container{
+  position: relative;
+  font-size: 14px;
+  color: #666;
+  padding: 30px 30px 30px 10px;
+}
+.wy-theme h1 {
+	font-size: 18px;
+	font-weight: bolder;
+	color: #333;
+}
+.wy-theme section {
+	margin-bottom: 25px;
+	padding-left: 30px;
+}
+.wy-theme .left {
+	float: left;
+	width: 380px;
+}
+.wy-theme .right {
+	float: right;
+	width: 380px;	
+}
+.wy-theme  .back {
+	height: 58px;
+	background: #000000;
+	position: absolute;
+	left: 0; 
+	right: 0;
+	top: 90px;
+}
+.wy-theme .avatar {
+	width: 114.5px;
+	height: 138px;
+	background: #D8D8D8; 
+	float: left;
+	margin-right: 30px;
+}
+.wy-theme .avatar img {
+	width: 114.5px;
+	height: 138px;
+}
+.wy-theme #base {
+	background: #FFFFFF;
+	box-shadow: 0 0 4px 1px rgba(51,51,51,0.50);
+	border-radius: 9px;
+	padding: 20px 30px;
+	margin: 0 50px 20px 70px;
+}
+.wy-theme #base .header-box {
+	float: left;
+	width: 400px;
+	padding: 20px 0 10px;
+}
+.wy-theme #base .header-box h1{
+	float: left;
+	margin-right: 30px;
+}
+.wy-theme #base .item {
+	float: left;
+	margin-right: 30px;
+}
+.wy-theme .main #jybj .item-box .item,.wy-theme .main #sxjl .item-box .item,.main #xmjy .item-box .item,.main #pxjl .item-box .item{
+  float: left;
+  margin-right: 30px;
+  text-align: left;
+  font-size: 14px;
+  color: #333333;
+  /*line-height: 20px;*/
+  font-weight: bolder;
+}
+.wy-theme .main #jybj .block-item,.main #sxjl .block-item,.main #xmjy .block-item,.main #pxjl .block-item{
+	/*margin-top: 10px;*/
+}
+.wy-theme .main .time {
+	font-size: 14px;
+	color: #333333;
+	line-height: 20px;
+	font-weight: bolder;
+}
+.wy-theme .main #xqah .hobbyItem {
+  float: left;
+  width: 50px;
+  height: 50px;
+  border: 1px solid #999999;
+  border-radius: 25px;
+  margin: 15px 10px 0 0;
+  text-align: center;
+  line-height: 50px;
+  font-size: 10px;
+}
+.wy-theme #wdjn .skill {
+	padding: 5px;
+	border: 1px solid #666;
+	border-radius: 10px;
+	display: inline-block;
+	margin-right: 10px;
+	margin-top: 10px;
+}
+
+
+
